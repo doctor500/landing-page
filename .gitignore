@@ -45,3 +45,4 @@ prompt_*.txt
 # Build artifacts
 dist/
 build/
+docs/
