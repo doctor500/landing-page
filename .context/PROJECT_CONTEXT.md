@@ -17,46 +17,41 @@ npm run build    # Production build
 
 ---
 
-## 🛠️ Architecture
+## 🛠️ Architecture & Deployment
 
-**Tech Stack:**
-- **Core:** Next.js 14 (App Router), TypeScript, React 18
-- **Styling:** Tailwind CSS + Design System Tokens (CDN)
-- **State/Theme:** `next-themes` (manages `[data-color-mode]` attribute)
+- **Tech Stack:** Next.js 14 (App Router), TypeScript, React 18
+- **Styling:** Tailwind CSS + Design System Tokens (CDN) + `next-themes`
 - **Animations:** Framer Motion
 
-**Deployment (GitHub Pages):**
-- **Domain:** `layardi.com` / `www.layardi.com` (CNAME in `public/`)
+### Deployment (GitHub Pages)
+- **Domain:** `layardi.com` / `www.layardi.com` (via `public/CNAME`)
 - **Pipeline:** GitHub Actions (`.github/workflows/nextjs.yml`)
-- **Build Output:** Static Export (`output: 'export'` in `next.config.mjs`) to `out/`
-- **Asset Base Path:** Root (`""`) for custom domain
+- **Build:** Static Export (`output: 'export'`) to `out/` with empty base path.
 
-**Design System (CDN):**
-- **Source:** Private Repo (`doctor500/design-system`)
+### Design System (CDN)
+- **Source:** Private components (`doctor500/design-system`)
 - **Distribution:** `https://design-token.layardi.com/v1/tokens.css`
-- **Method:** Imported in `app/globals.css` via `@import`
-- **No Token Build Step:** Local submodule Removed. Tokens loaded at runtime/build-time via CSS import.
+- **Integration:** Imported in `app/globals.css`. No local submodule.
 
 ---
 
-## 🧩 UI Components
+## 📏 Development Guidelines
 
-**Key Components (`components/`):**
-1.  **Fixed Elements:**  
-    - `ThemeToggle`: Top-right fixed button. Switches theme via `next-themes`.
-    - `FloatingNav`: Bottom-center navigation. Appears on scroll via Framer Motion.
-2.  **Sections:**  
-    - `HeroSection`: Animated counters, split layout.
-    - `StatsDashboard`: Metrics with semantic icons.
-    - `CareerTimeline`: Vertical timeline of experience.
-    - `Testimonials`: Carousel with progress bar & controls.
+1.  **Single Content Source:** All text/data lives in `lib/data.ts`.
+2.  **Styling Strategy:**
+    - **Tokens First:** Use `--accent-cyan`, `--space-20` (CDN).
+    - **Fallback:** Core spacing defined in `globals.css` for robustness.
+    - **Dark Mode:** `[data-color-mode="dark"]` selector (Tailwind config).
+    - **Responsive:** Mobile `px-4` → Desktop `80px` padding.
+3.  **Private Tokens:** Never hardcode HEX values. Always use variables.
+4.  **Simplicity:** Avoid complex hydration; use standard links where possible.
 
-**Styling Strategy:**
-- **Tokens First:** Use `--accent-cyan`, `--space-20` vars from `tokens.css`.
-- **Responsive:** Mobile-first.
-    - Mobile: `px-4` padding.
-    - Desktop (≥1024px): `80px` padding (fallback variables in `globals.css`).
-- **Dark Mode:** `data-color-mode="dark"` selector configured in `tailwind.config.ts`.
+---
+
+## 🧩 Key Components (`components/`)
+
+- **Fixed:** `ThemeToggle` (Top-Right), `FloatingNav` (Bottom-Center).
+- **Sections:** `HeroSection` (Counters), `StatsDashboard`, `CareerTimeline`, `Testimonials` (Carousel).
 
 ---
 
@@ -64,35 +59,15 @@ npm run build    # Production build
 
 ```
 landing-page/
-├── .context/           # Documentation (Source of Truth)
-├── .github/workflows/  # CI/CD (Next.js Deploy)
+├── .context/           # Source of Truth
+├── .github/workflows/  # CI/CD
 ├── app/
-│   ├── layout.tsx     # Root layout + ThemeProvider
-│   ├── page.tsx       # Main Layout (Nav + Sections)
-│   └── globals.css    # Global CSS (Imports CDN Tokens + Fallbacks)
+│   ├── layout.tsx     # Root + ThemeProvider
+│   ├── page.tsx       # Main Layout
+│   └── globals.css    # CSS + Imports
 ├── components/        # UI Components
-├── lib/
-│   └── data.ts        # Content Data (Jobs, Testimonials, Stats)
-└── public/
-    └── CNAME          # Custom Domain config
+├── lib/data.ts        # Content Data
+└── public/CNAME       # Domain Config
 ```
 
----
-
-## 🔒 Key Decisions & Rules
-
-1.  **Single Source of Truth:** `lib/data.ts` holds all text content.
-2.  **Private Design System:** Never hardcode token values. Use CSS variables.
-3.  **Clean Repo:** No `out/` or `node_modules`. `package-lock.json` IS committed.
-4.  **Simplicity:** Avoid complex hydration logic. Use standard `<a>` tags for external links.
-
----
-
-## 🔄 Recent Major Changes
-
-- **2026-01-02:** Configured Custom Domain (`layardi.com`) & Fixed Asset Paths.
-- **2026-01-02:** Migrated Design System to CDN (Removed Submodule).
-- **2026-01-02:** Moved Theme Toggle to Fixed Top-Right position.
-- **2026-01-02:** Implemented "Selector Strategy" for Tailwind Dark Mode compatibility.
-
-*Detailed history in `.context/CHANGELOG.md`*
+*For version history, see `.context/CHANGELOG.md`*
