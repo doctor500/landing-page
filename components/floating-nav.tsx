@@ -80,7 +80,7 @@ export function FloatingNav() {
                     className="fixed bottom-8 left-1/2 z-50"
                 >
                     <nav
-                        className="glass-card-gradient px-3 py-3 rounded-full shadow-xl flex items-center gap-1"
+                        className="glass-card px-3 py-3 rounded-full shadow-xl flex items-center gap-1"
                         style={{
                             backdropFilter: 'blur(12px)',
                         }}

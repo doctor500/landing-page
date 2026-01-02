@@ -8,6 +8,16 @@
 
 /* Base styles */
 @layer base {
+    :root {
+        /* Fallback tokens (matches design-system) */
+        --space-4: 1rem;
+        /* 16px */
+        --space-20: 5rem;
+        /* 80px */
+        --space-24: 6rem;
+        /* 96px */
+    }
+
     * {
         @apply border-border;
     }
