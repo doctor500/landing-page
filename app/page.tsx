@@ -18,7 +18,12 @@ import { FloatingNav } from '@/components/floating-nav'
 export default function Home() {
     return (
         <main className="min-h-screen container-padding">
-            {/* Floating Navigation with integrated theme toggle */}
+            {/* Theme Toggle - Fixed Top Right */}
+            <div className="fixed top-6 right-6 z-50">
+                <ThemeToggle />
+            </div>
+
+            {/* Floating Navigation */}
             <FloatingNav />
 
             {/* Hero Section */}

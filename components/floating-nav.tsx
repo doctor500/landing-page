@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ThemeToggle } from './theme-toggle'
 
 /**
  * Floating Navigation Component - Bottom Center
@@ -106,17 +105,6 @@ export function FloatingNav() {
                                 <span className="hidden md:inline text-sm whitespace-nowrap">{item.label}</span>
                             </button>
                         ))}
-
-                        {/* Divider */}
-                        <div
-                            className="h-6 w-px mx-1"
-                            style={{ backgroundColor: 'var(--borderColor-default)' }}
-                        />
-
-                        {/* Theme Toggle */}
-                        <div className="flex items-center">
-                            <ThemeToggle />
-                        </div>
                     </nav>
                 </motion.div>
             )}
