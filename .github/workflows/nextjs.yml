@@ -1,13 +1,11 @@
 # GitHub Actions workflow for Next.js static export to GitHub Pages
-# NOTE: This workflow is created for reference but will NOT auto-deploy
-# You must manually review and push changes before deployment
 
 name: Deploy Next.js to GitHub Pages
 
 on:
-  # Triggers on push to main branch (disabled by default - remove 'branches: []' to enable)
+  # Auto-deploy on push to main branch
   push:
-    branches: [] # Empty = disabled. Change to ['main'] when ready to deploy
+    branches: ['main']
   
   # Allows manual trigger from Actions tab
   workflow_dispatch:
@@ -30,8 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: true # Important: checkout design-system submodule
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
