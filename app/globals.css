@@ -1,0 +1,148 @@
+/* Import design system tokens from Netlify CDN */
+@import url('https://design-token.layardi.com/v1/tokens.css');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Custom component styles */
+@layer components {
+
+    /* Glassmorphism card */
+    .glass-card {
+        @apply backdrop-blur-lg bg-glass-bg border border-border-muted rounded-lg;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    /* Glass card with gradient border */
+    .glass-card-gradient {
+        @apply glass-card relative;
+    }
+
+    .glass-card-gradient::before {
+        content: '';
+        @apply absolute inset-0 rounded-lg opacity-50;
+        background: linear-gradient(135deg, theme('colors.accent-cyan'), theme('colors.accent-purple'));
+        z-index: -1;
+        padding: 1px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+    }
+
+    /* Animated gradient text */
+    .gradient-text {
+        @apply bg-clip-text text-transparent;
+        background-image: linear-gradient(135deg, theme('colors.accent-cyan'), theme('colors.accent-purple'));
+    }
+
+    /* Stat card hover effect */
+    .stat-card {
+        @apply glass-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    }
+}
+
+/* Utility classes */
+@layer utilities {
+
+    /* Smooth scroll */
+    .scroll-smooth {
+        scroll-behavior: smooth;
+    }
+
+    /* Hide scrollbar */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Container utility for desktop padding */
+.container-padding {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+    .container-padding {
+        padding-left: var(--space-20);
+        padding-right: var(--space-20);
+    }
+}
+
+@media (min-width: 1440px) {
+    .container-padding {
+        padding-left: var(--space-24);
+        padding-right: var(--space-24);
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
