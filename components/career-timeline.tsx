@@ -43,6 +43,8 @@ function TimelineItem({ position, index, isExpanded, onClick }: TimelineItemProp
                 <div className="ml-4 flex-1">
                     <button
                         onClick={onClick}
+                        aria-expanded={isExpanded}
+                        aria-controls={`timeline-content-${index}`}
                         className="text-left w-full glass-card p-4 hover:bg-accent-cyan/5 transition-all duration-300"
                     >
                         <div className="flex items-center justify-between mb-2">
@@ -70,6 +72,7 @@ function TimelineItem({ position, index, isExpanded, onClick }: TimelineItemProp
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
+                                aria-hidden="true"
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
@@ -80,6 +83,7 @@ function TimelineItem({ position, index, isExpanded, onClick }: TimelineItemProp
                     <AnimatePresence>
                         {isExpanded && (
                             <motion.div
+                                id={`timeline-content-${index}`}
                                 initial={{ height: 0, opacity: 0 }}
                                 animate={{ height: 'auto', opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}

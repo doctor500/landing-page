@@ -33,6 +33,15 @@ npm run build    # Production build
 - **Distribution:** `https://design-token.layardi.com/v1/tokens.css`
 - **Integration:** Linked in `app/layout.tsx` (via `<link>`) to resolve bundle order issues.
 
+### Design System Alignment
+**Evaluation (2026-01-03):** 85% Aligned (Brand Extension)
+- **Status:** Uses `doctor500/design-system` v1.0.0 via CDN.
+- **Brand Extension:** Custom Cyan/Purple palette (`accent-cyan`, `accent-purple`) sits on top of base Blue system.
+- **Accessibility:** 
+  - `CareerTimeline` patched for ARIA support.
+  - `HeroSection` uses brand sizing overrides.
+  - "Skip to Content" link deferred.
+
 ---
 
 ## 📏 Development Guidelines
