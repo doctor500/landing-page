@@ -39,7 +39,12 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html
+            lang="en"
+            suppressHydrationWarning
+            data-light-theme="light"
+            data-dark-theme="dark"
+        >
             <body className={`${inter.variable} font-sans`}>
                 <ThemeProvider
                     attribute="data-color-mode"
