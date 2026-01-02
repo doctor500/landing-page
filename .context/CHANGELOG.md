@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1] - 2026-01-02
+
+### Added
+- Custom Domain (`layardi.com`) with CNAME
+- Fallback CSS tokens for robust padding
+- Fixed Theme Toggle (Top-Right)
+
+### Changed
+- Removed Gradient Border from floating nav
+- Updated Project Context (compacted)
+- Tailwind Config: Using `selector` strategy for dark mode
+
+---
+
 ## [1.0.0] - 2026-01-02
 
 ### Added
@@ -45,6 +59,17 @@
 - Complex accessibility features (skip links, ARIA, motion preferences)
 - **Reason:** Added unnecessary complexity
 - **Lesson:** Keep features simple, add incrementally
+
+### 2026-01-02 (Session 5 - Deployment & Polish)
+**Completed:**
+- **Deployment:** GitHub Pages live at `layardi.com` (Actions + Static Export)
+- **Domain:** Configured `www.layardi.com` (CNAME)
+- **UI Fixes:**
+  - Moved Theme Toggle to fixed top-right (separated from nav)
+  - Fixed Dark Mode selector logic (Tailwind `selector` strategy)
+  - Removed Floating Nav gradient border (cleaner look)
+  - Added robust fallback CSS for desktop padding
+- **Docs:** Compacted `PROJECT_CONTEXT.md` as single source of truth
 
 ### 2026-01-01 (Session 1)
 **Completed:**
