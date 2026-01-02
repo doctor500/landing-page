@@ -31,7 +31,7 @@ npm run build    # Production build
 ### Design System (CDN)
 - **Source:** Private components (`doctor500/design-system`)
 - **Distribution:** `https://design-token.layardi.com/v1/tokens.css`
-- **Integration:** Imported in `app/globals.css`. No local submodule.
+- **Integration:** Linked in `app/layout.tsx` (via `<link>`) to resolve bundle order issues.
 
 ---
 

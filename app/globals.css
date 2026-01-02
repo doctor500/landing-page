@@ -1,5 +1,4 @@
-/* Import design system tokens from Netlify CDN */
-@import url('https://design-token.layardi.com/v1/tokens.css');
+/* Design system tokens loaded in layout.tsx via link tag */
 
 /* Tailwind directives */
 @tailwind base;
