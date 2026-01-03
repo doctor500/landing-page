@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.2] - 2026-01-03
+
+### Fixed
+- Enhanced testimonials carousel progress bar visibility
+  - Increased height from 4px to 6px (h-1 → h-1.5)
+  - Added glowing cyan background track with inset shadow
+  - Applied gradient effect (cyan to purple) on progress indicator
+  - Added glow shadow for premium aesthetic
+  - Improved animation smoothness with ease-linear transition
+
+---
+
 ## [1.0.1] - 2026-01-02
 
 ### Added
