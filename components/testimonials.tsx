@@ -175,8 +175,8 @@ export function Testimonials() {
                                 }}
                                 aria-label={`Go to testimonial ${index + 1}`}
                                 className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                                        ? 'w-8 bg-accent-cyan'
-                                        : 'w-2 bg-foreground-muted hover:bg-accent-cyan/50'
+                                    ? 'w-8 bg-accent-cyan'
+                                    : 'w-2 bg-foreground-muted hover:bg-accent-cyan/50'
                                     }`}
                             />
                         ))}
@@ -185,14 +185,19 @@ export function Testimonials() {
                     {/* Progress bar */}
                     {isPlaying && !isPaused && (
                         <div
-                            className="mt-4 h-1 rounded-full overflow-hidden"
-                            style={{ backgroundColor: 'var(--borderColor-muted)' }}
+                            className="mt-4 h-1.5 rounded-full overflow-hidden relative"
+                            style={{
+                                backgroundColor: 'rgba(0, 217, 255, 0.1)',
+                                boxShadow: 'inset 0 0 10px rgba(0, 217, 255, 0.2)'
+                            }}
                         >
                             <div
-                                className="h-full rounded-full transition-all duration-100"
+                                className="h-full rounded-full transition-all ease-linear"
                                 style={{
                                     width: `${progress}%`,
-                                    backgroundColor: 'var(--accent-cyan)',
+                                    background: 'linear-gradient(90deg, #00d9ff, #7c3aed)',
+                                    boxShadow: '0 0 10px rgba(0, 217, 255, 0.5)',
+                                    transitionDuration: '100ms'
                                 }}
                             />
                         </div>
