@@ -107,13 +107,13 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         transition={{ duration: 0.3, type: 'spring', damping: 25 }}
-                        className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md mx-4"
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4"
                         role="dialog"
                         aria-modal="true"
                         aria-labelledby="contact-modal-title"
                         tabIndex={-1}
                     >
-                        <div className="glass-card p-6 md:p-8">
+                        <div className="glass-card p-6 md:p-8 w-full max-w-md" onClick={(e) => e.stopPropagation()}>
                             {/* Header */}
                             <div className="flex items-center justify-between mb-6">
                                 <h2 id="contact-modal-title" className="text-2xl font-bold gradient-text">
