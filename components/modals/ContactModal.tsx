@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { contactLinks, type ContactLink } from '@/lib/data'
+import { contactLinks, type ContactLink } from '@/lib/content'
 
 interface ContactModalProps {
     isOpen: boolean

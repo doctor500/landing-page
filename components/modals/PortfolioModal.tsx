@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { portfolioLinks, type PortfolioLink } from '@/lib/data'
+import { portfolioLinks, type PortfolioLink } from '@/lib/content'
 
 interface PortfolioModalProps {
     isOpen: boolean

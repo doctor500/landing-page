@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { careerTimeline } from '@/lib/data'
+import { sections } from '@/lib/content'
 
 /**
  * Career Timeline Component
@@ -158,10 +159,10 @@ export function CareerTimeline() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Career Journey
+                        {sections.career.title}
                     </h2>
                     <p className="text-xl text-foreground-muted">
-                        From Web Development to Infrastructure Engineering
+                        {sections.career.subtitle}
                     </p>
                 </motion.div>
 

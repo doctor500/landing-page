@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { stats } from '@/lib/data'
+import { personal } from '@/lib/content'
 import { PortfolioModal } from './modals/PortfolioModal'
 import { ContactModal } from './modals/ContactModal'
 
@@ -97,19 +98,18 @@ export function HeroSection() {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                <p className="text-accent-cyan text-lg mb-2">Hi, I&apos;m</p>
+                                <p className="text-accent-cyan text-lg mb-2">{personal.greeting}</p>
                                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-                                    David Layardi
+                                    {personal.name}
                                 </h1>
                                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground-muted mb-6">
-                                    Infrastructure Engineer
+                                    {personal.role}
                                 </h2>
                                 <p className="text-xl md:text-2xl text-accent-purple font-semibold mb-6">
-                                    Building Scalable Cloud Systems
+                                    {personal.tagline}
                                 </p>
                                 <p className="text-lg text-foreground-muted max-w-2xl">
-                                    6+ years driving infrastructure modernization across E-commerce, GovTech, and Fintech.
-                                    Specializing in cloud architecture, DevOps automation, and cost optimization.
+                                    {personal.heroBio}
                                 </p>
                             </motion.div>
 

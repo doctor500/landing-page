@@ -1,0 +1,32 @@
+{
+  "portfolio": [
+    {
+      "name": "GitHub Profile",
+      "key": "github",
+      "icon": "github",
+      "description": "Open source projects & contributions"
+    },
+    {
+      "name": "Medium Articles",
+      "key": "medium",
+      "icon": "medium",
+      "description": "Technical blog posts & insights"
+    }
+  ],
+  "contact": [
+    {
+      "name": "LinkedIn",
+      "key": "linkedIn",
+      "icon": "linkedin",
+      "description": "Professional network & updates",
+      "type": "link"
+    },
+    {
+      "name": "Email Me",
+      "key": "email",
+      "icon": "email",
+      "description": "Send me a direct message",
+      "type": "mailto"
+    }
+  ]
+}

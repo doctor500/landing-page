@@ -1,0 +1,14 @@
+{
+  "career": {
+    "title": "Career Journey",
+    "subtitle": "From Web Development to Infrastructure Engineering"
+  },
+  "stats": {
+    "title": "Impact Dashboard",
+    "subtitle": "Measurable results across infrastructure projects"
+  },
+  "testimonials": {
+    "title": "What Colleagues Say",
+    "subtitle": "Recommendations from people I've worked with"
+  }
+}
