@@ -121,7 +121,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                 </h2>
                                 <button
                                     onClick={onClose}
-                                    className="p-2 rounded-lg hover:bg-white/10 transition-colors text-foreground-muted hover:text-foreground"
+                                    className="p-2 rounded-lg hover:bg-glass-item-hover transition-colors text-foreground-muted hover:text-foreground"
                                     aria-label="Close modal"
                                 >
                                     <CloseIcon />
@@ -139,7 +139,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: index * 0.1 }}
-                                        className="group flex items-center gap-4 p-4 rounded-lg bg-white/5 hover:bg-white/10 border border-border-muted hover:border-accent-purple/50 transition-all duration-300"
+                                        className="group flex items-center gap-4 p-4 rounded-lg bg-glass-item hover:bg-glass-item-hover border border-border-muted hover:border-accent-purple/50 transition-all duration-300"
                                     >
                                         <div className="flex-shrink-0 text-accent-purple group-hover:scale-110 transition-transform duration-300">
                                             {getIcon(link.icon)}

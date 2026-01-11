@@ -13,7 +13,10 @@ const config: Config = {
                 // Dark Mode Base (from visual-presentation-plan.md)
                 'bg-primary': '#0a0e27',
                 'bg-secondary': '#1a1f3a',
-                'glass-bg': 'rgba(255, 255, 255, 0.05)',
+
+                'glass-bg': 'var(--bgColor-glass)',
+                'glass-item': 'var(--bgColor-glass-item)',
+                'glass-item-hover': 'var(--bgColor-glass-item-hover)',
 
                 // Accent Colors
                 'accent-cyan': '#00d9ff',
