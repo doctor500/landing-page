@@ -3,7 +3,7 @@
 **Project:** David Layardi Personal Landing Page  
 **Framework:** Next.js 14 + TypeScript  
 **Live Site:** [https://www.layardi.com](https://www.layardi.com)  
-**Last Updated:** 2026-01-02
+**Last Updated:** 2026-01-12
 
 ---
 
@@ -33,34 +33,24 @@ npm run build    # Production build
 - **Distribution:** `https://design-token.layardi.com/v1/tokens.css`
 - **Integration:** Linked in `app/layout.tsx` (via `<link>`) to resolve bundle order issues.
 
-### Design System Alignment
-**Evaluation (2026-01-03):** 85% Aligned (Brand Extension)
-- **Status:** Uses `doctor500/design-system` v1.0.0 via CDN.
-- **Brand Extension:** Custom Cyan/Purple palette (`accent-cyan`, `accent-purple`) sits on top of base Blue system.
-- **Accessibility:** 
-  - `CareerTimeline` patched for ARIA support.
-  - `HeroSection` uses brand sizing overrides.
-  - "Skip to Content" link deferred.
-
 ---
 
 ## 📏 Development Guidelines
 
-1.  **Single Content Source:** All text/data lives in `lib/data.ts`.
-2.  **Styling Strategy:**
-    - **Tokens First:** Use `--accent-cyan`, `--space-20` (CDN).
-    - **Fallback:** Core spacing defined in `globals.css` for robustness.
-    - **Dark Mode:** `[data-color-mode="dark"]` selector (Tailwind config).
-    - **Responsive:** Mobile `px-4` → Desktop `80px` padding.
-3.  **Private Tokens:** Never hardcode HEX values. Always use variables.
-4.  **Simplicity:** Avoid complex hydration; use standard links where possible.
+1. **Content System:** 
+   - **Text Content:** JSON files in `content/` directory
+   - **Complex Data:** Arrays & objects in `lib/data.ts`
+   - **Type-Safe Loader:** `lib/content.ts` provides typed access
+   
+2. **Styling Strategy:**
+   - **Tokens First:** Use `--accent-cyan`, `--space-20` (CDN).
+   - **Fallback:** Core spacing defined in `globals.css` for robustness.
+   - **Dark Mode:** `[data-color-mode="dark"]` selector (Tailwind config).
+   - **Responsive:** Mobile `px-4` → Desktop `80px` padding.
 
----
+3. **Private Tokens:** Never hardcode HEX values. Always use variables.
 
-## 🧩 Key Components (`components/`)
-
-- **Fixed:** `ThemeToggle` (Top-Right), `FloatingNav` (Bottom-Center).
-- **Sections:** `HeroSection` (Counters), `StatsDashboard`, `CareerTimeline`, `Testimonials` (Carousel).
+4. **Simplicity:** Avoid complex hydration; use standard links where possible.
 
 ---
 
@@ -68,15 +58,74 @@ npm run build    # Production build
 
 ```
 landing-page/
-├── .context/           # Source of Truth
-├── .github/workflows/  # CI/CD
+├── .context/              # Documentation (source of truth)
+├── .agent/workflows/      # AI agent workflow templates
+├── .github/workflows/     # CI/CD
+├── content/               # JSON Content Files
+│   ├── personal.json     # Personal info, bio, URLs
+│   ├── sections.json     # Section titles & subtitles
+│   └── links.json        # Portfolio & contact link metadata
 ├── app/
-│   ├── layout.tsx     # Root + ThemeProvider
-│   ├── page.tsx       # Main Layout
-│   └── globals.css    # CSS + Imports
-├── components/        # UI Components
-├── lib/data.ts        # Content Data
-└── public/CNAME       # Domain Config
+│   ├── layout.tsx        # Root + ThemeProvider
+│   ├── page.tsx          # Main Layout
+│   └── globals.css       # CSS + Imports
+├── components/
+│   ├── hero-section.tsx  # Hero with CTA modal triggers
+│   ├── career-timeline.tsx
+│   ├── stats-dashboard.tsx
+│   ├── testimonials.tsx
+│   ├── floating-nav.tsx
+│   ├── theme-toggle.tsx
+│   └── modals/           # Modal popup components
+│       ├── PortfolioModal.tsx
+│       └── ContactModal.tsx
+├── lib/
+│   ├── data.ts           # Complex data (career, stats, etc.)
+│   └── content.ts        # TypeScript loader for JSON content
+└── public/CNAME          # Domain Config
 ```
+
+---
+
+## 🧩 Key Components
+
+### Fixed Components
+- `ThemeToggle` - Top-Right corner
+- `FloatingNav` - Bottom-Center navigation
+
+### Section Components
+- `HeroSection` - Name, role, tagline, stats counters, CTA buttons with modal triggers
+- `StatsDashboard` - Key metrics display
+- `CareerTimeline` - Expandable career history
+- `Testimonials` - Auto-rotating carousel with progress bar
+
+### Modal Components (NEW)
+- `PortfolioModal` - Shows GitHub & Medium links (via "View My Work" button)
+- `ContactModal` - Shows LinkedIn & Email (via "Let's Connect" button)
+
+---
+
+## 📝 Content Management
+
+### JSON Content Files (`content/`)
+
+| File | Purpose |
+|------|---------|
+| `personal.json` | Name, role, tagline, bio, email, social URLs |
+| `sections.json` | Section titles and subtitles |
+| `links.json` | Portfolio & contact link metadata |
+
+### To Update Content:
+```bash
+# Edit JSON files directly - no code changes needed!
+vim content/personal.json
+```
+
+### Content Loader (`lib/content.ts`)
+- Imports JSON files with TypeScript types
+- Derives `portfolioLinks` and `contactLinks` from `personal.json` URLs
+- Prevents URL duplication across files
+
+---
 
 *For version history, see `.context/CHANGELOG.md`*

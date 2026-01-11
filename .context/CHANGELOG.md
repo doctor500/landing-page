@@ -1,16 +1,37 @@
 # Changelog
 
+## [1.1.0] - 2026-01-12
+
+### Added
+- **Modal Popups** for CTA buttons
+  - `PortfolioModal` - "View My Work" button shows GitHub & Medium links
+  - `ContactModal` - "Let's Connect" button shows LinkedIn & Email
+  - Glassmorphism design with Framer Motion animations
+  - Keyboard accessible (Escape to close)
+  - Click outside to close
+
+- **JSON Content System** (Centralized content management)
+  - `content/personal.json` - Personal info, bio, all social URLs
+  - `content/sections.json` - Section titles and subtitles  
+  - `content/links.json` - Portfolio & contact link metadata
+  - `lib/content.ts` - TypeScript loader with full type safety
+
+### Changed
+- Hero section now uses `personal` from `lib/content.ts`
+- Career timeline now uses `sections` from `lib/content.ts`
+- Modal components import from `lib/content.ts` instead of `lib/data.ts`
+- Removed duplicate `personalInfo`, `portfolioLinks`, `contactLinks` from `lib/data.ts`
+
+### Fixed
+- Modal centering issue (changed from translate to flexbox approach)
+- LinkedIn URL updated to `david-lay`
+
+---
+
 ## [1.0.2] - 2026-01-03
 
 ### Fixed
 - Enhanced testimonials carousel progress bar visibility
-  - Increased height from 4px to 6px (h-1 → h-1.5)
-  - Added glowing cyan background track with inset shadow
-  - Applied gradient effect (cyan to purple) on progress indicator
-  - Added glow shadow for premium aesthetic
-  - Improved animation smoothness with ease-linear transition
-
----
 
 ## [1.0.1] - 2026-01-02
 
