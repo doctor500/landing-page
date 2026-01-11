@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { stats } from '@/lib/data'
+import { PortfolioModal } from './modals/PortfolioModal'
+import { ContactModal } from './modals/ContactModal'
 
 /**
  * Hero Section Component
@@ -12,6 +14,7 @@ import { stats } from '@/lib/data'
  * - Animated stat counters
  * - Glassmorphism stat cards
  * - Responsive design
+ * - Modal popups for CTA buttons
  */
 
 const useCounter = (end: number, duration: number = 2000) => {
@@ -79,71 +82,87 @@ function StatCard({ value, label, sublabel, index }: StatCardProps) {
 }
 
 export function HeroSection() {
+    const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false)
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
     return (
-        <section className="min-h-screen flex items-center justify-center px-4 py-20">
-            <div className="max-w-7xl w-full">
-                <div className="grid lg:grid-cols-5 gap-12 items-center">
-                    {/* Left side - Text content (60% / 3 columns) */}
-                    <div className="lg:col-span-3 space-y-6">
-                        <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <p className="text-accent-cyan text-lg mb-2">Hi, I&apos;m</p>
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-                                David Layardi
-                            </h1>
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground-muted mb-6">
-                                Infrastructure Engineer
-                            </h2>
-                            <p className="text-xl md:text-2xl text-accent-purple font-semibold mb-6">
-                                Building Scalable Cloud Systems
-                            </p>
-                            <p className="text-lg text-foreground-muted max-w-2xl">
-                                6+ years driving infrastructure modernization across E-commerce, GovTech, and Fintech.
-                                Specializing in cloud architecture, DevOps automation, and cost optimization.
-                            </p>
-                        </motion.div>
-
-                        {/* CTA Buttons */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3, duration: 0.5 }}
-                            className="flex flex-wrap gap-4 mt-8"
-                        >
-                            <a
-                                href="#projects"
-                                className="px-8 py-3 bg-accent-cyan text-bg-primary font-semibold rounded-lg hover:bg-accent-cyan/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-cyan/50"
+        <>
+            <section className="min-h-screen flex items-center justify-center px-4 py-20">
+                <div className="max-w-7xl w-full">
+                    <div className="grid lg:grid-cols-5 gap-12 items-center">
+                        {/* Left side - Text content (60% / 3 columns) */}
+                        <div className="lg:col-span-3 space-y-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5 }}
                             >
-                                View My Work
-                            </a>
-                            <a
-                                href="#contact"
-                                className="px-8 py-3 glass-card-gradient font-semibold rounded-lg hover:scale-105 transition-all duration-300"
-                            >
-                                Let&apos;s Connect
-                            </a>
-                        </motion.div>
-                    </div>
+                                <p className="text-accent-cyan text-lg mb-2">Hi, I&apos;m</p>
+                                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+                                    David Layardi
+                                </h1>
+                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground-muted mb-6">
+                                    Infrastructure Engineer
+                                </h2>
+                                <p className="text-xl md:text-2xl text-accent-purple font-semibold mb-6">
+                                    Building Scalable Cloud Systems
+                                </p>
+                                <p className="text-lg text-foreground-muted max-w-2xl">
+                                    6+ years driving infrastructure modernization across E-commerce, GovTech, and Fintech.
+                                    Specializing in cloud architecture, DevOps automation, and cost optimization.
+                                </p>
+                            </motion.div>
 
-                    {/* Right side - Stats cards (40% / 2 columns) */}
-                    <div className="lg:col-span-2">
-                        <div className="grid grid-cols-2 gap-4">
-                            {stats.slice(0, 4).map((stat, index) => (
-                                <StatCard
-                                    key={stat.label}
-                                    value={stat.value}
-                                    label={stat.label}
-                                    sublabel={stat.sublabel}
-                                    index={index}
-                                />
-                            ))}
+                            {/* CTA Buttons */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3, duration: 0.5 }}
+                                className="flex flex-wrap gap-4 mt-8"
+                            >
+                                <button
+                                    onClick={() => setIsPortfolioModalOpen(true)}
+                                    className="px-8 py-3 bg-accent-cyan text-bg-primary font-semibold rounded-lg hover:bg-accent-cyan/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent-cyan/50"
+                                >
+                                    View My Work
+                                </button>
+                                <button
+                                    onClick={() => setIsContactModalOpen(true)}
+                                    className="px-8 py-3 glass-card-gradient font-semibold rounded-lg hover:scale-105 transition-all duration-300"
+                                >
+                                    Let&apos;s Connect
+                                </button>
+                            </motion.div>
+                        </div>
+
+                        {/* Right side - Stats cards (40% / 2 columns) */}
+                        <div className="lg:col-span-2">
+                            <div className="grid grid-cols-2 gap-4">
+                                {stats.slice(0, 4).map((stat, index) => (
+                                    <StatCard
+                                        key={stat.label}
+                                        value={stat.value}
+                                        label={stat.label}
+                                        sublabel={stat.sublabel}
+                                        index={index}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            {/* Modals */}
+            <PortfolioModal
+                isOpen={isPortfolioModalOpen}
+                onClose={() => setIsPortfolioModalOpen(false)}
+            />
+            <ContactModal
+                isOpen={isContactModalOpen}
+                onClose={() => setIsContactModalOpen(false)}
+            />
+        </>
     )
 }
+

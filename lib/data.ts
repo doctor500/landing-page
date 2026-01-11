@@ -38,6 +38,22 @@ export interface Stat {
     icon: string
 }
 
+export interface PortfolioLink {
+    name: string
+    url: string
+    icon: 'github' | 'medium'
+    description: string
+}
+
+export interface ContactLink {
+    name: string
+    url?: string
+    email?: string
+    icon: 'linkedin' | 'email'
+    description: string
+    type: 'link' | 'mailto'
+}
+
 // Career Timeline Data
 export const careerTimeline: CareerPosition[] = [
     {
@@ -398,5 +414,41 @@ export const personalInfo = {
     email: 'david@layardi.com', // Update with actual email
     linkedIn: 'https://www.linkedin.com/in/davidlayardi',
     github: 'https://github.com/doctor500',
+    medium: 'https://davidlayardi.medium.com/',
     bio: `Infrastructure Engineer with 6+ years of experience specializing in cloud architecture, DevOps automation, and cost optimization. Proven track record of achieving 90%+ infrastructure cost reduction while maintaining 99.9% system availability.`
 }
+
+// Portfolio Links for "View My Work" modal
+export const portfolioLinks: PortfolioLink[] = [
+    {
+        name: 'GitHub Profile',
+        url: 'https://github.com/doctor500',
+        icon: 'github',
+        description: 'Open source projects & contributions'
+    },
+    {
+        name: 'Medium Articles',
+        url: 'https://davidlayardi.medium.com/',
+        icon: 'medium',
+        description: 'Technical blog posts & insights'
+    }
+]
+
+// Contact Links for "Let's Connect" modal
+export const contactLinks: ContactLink[] = [
+    {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/davidlayardi',
+        icon: 'linkedin',
+        description: 'Professional network & updates',
+        type: 'link'
+    },
+    {
+        name: 'Email Me',
+        email: 'david@layardi.com',
+        icon: 'email',
+        description: 'Send me a direct message',
+        type: 'mailto'
+    }
+]
+
