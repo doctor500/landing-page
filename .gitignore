@@ -45,3 +45,7 @@ prompt_*.txt
 dist/
 build/
 docs/
+
+# Private Submodule (Ignored for public repo)
+design-system/
+.gitmodules
