@@ -39,6 +39,17 @@ npm run build    # Production build
   4. Update `<link>` URL in `app/layout.tsx` to new version.
   5. **Constraint:** NEVER use local CSS imports for tokens in production code.
 
+### Git Submodule Management
+- **Status:** `design-system/` is a tracked Git submodule.
+- **Rule:** Do NOT commit file changes inside `design-system/` directly to the `landing-page` repo.
+- **Workflow:**
+  1. `cd design-system`
+  2. Make changes, commit, and push to `doctor500/design-system`
+  3. `cd ..`
+  4. `git add design-system` (Updates the commit pointer)
+  5. Commit `landing-page` (Records the new submodule version)
+- **Warning:** If you see "embedded git repository" warnings, ensure you are not adding files directly. Only the folder path (pointer) should be added.
+
 ---
 
 ## 📏 Development Guidelines
