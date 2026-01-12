@@ -1,5 +1,4 @@
-/* Design system tokens loaded via relative import to ensure latest local changes */
-@import '../design-system/tokens.css';
+/* Design system tokens loaded in layout.tsx via link tag */
 
 /* Tailwind directives */
 @tailwind base;
