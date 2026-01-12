@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.1] - 2026-01-12
+
+### Fixed
+- **Glassmorphism in Light Mode**
+  - Updated design tokens to v1.1.0 to include glassmorphism variables (`--bgColor-glass`, etc.)
+  - Fixed modal background visibility issues in Light Mode
+  - Switched from hardcoded color utilities to semantic tokens (`foreground-accent`) for hover states
+- **Design System Integration**
+  - Updated token loading to use versioned CDN URL (v1.1) to bypass cache issues
+
 ## [1.1.0] - 2026-01-12
 
 ### Added

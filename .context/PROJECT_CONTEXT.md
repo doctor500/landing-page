@@ -29,9 +29,15 @@ npm run build    # Production build
 - **Build:** Static Export (`output: 'export'`) to `out/` with empty base path.
 
 ### Design System (CDN)
-- **Source:** Private components (`doctor500/design-system`)
-- **Distribution:** `https://design-token.layardi.com/v1/tokens.css`
-- **Integration:** Linked in `app/layout.tsx` (via `<link>`) to resolve bundle order issues.
+- **Source:** Private components (`doctor500/design-system` - submodule in `design-system/`)
+- **Distribution:** `https://design-token.layardi.com/v1.1/tokens.css` (Netlify CDN)
+- **Integration:** Linked in `app/layout.tsx` (via `<link>`).
+- **Workflow:** To update tokens:
+  1. Modify `design-system` submodule.
+  2. Bump version in `tokens.css` and `build.sh`.
+  3. Push to `design-system` repo (triggers Netlify build).
+  4. Update `<link>` URL in `app/layout.tsx` to new version.
+  5. **Constraint:** NEVER use local CSS imports for tokens in production code.
 
 ---
 
@@ -48,7 +54,11 @@ npm run build    # Production build
    - **Dark Mode:** `[data-color-mode="dark"]` selector (Tailwind config).
    - **Responsive:** Mobile `px-4` → Desktop `80px` padding.
 
-3. **Private Tokens:** Never hardcode HEX values. Always use variables.
+4. **Semantic Styling:**
+   - **Colors:** Use semantic tokens (e.g., `text-foreground-accent`) instead of hardcoded values (`text-accent-cyan`).
+   - **Glassmorphism:** Use `--bgColor-glass`, `--bgColor-glass-item` for modal backgrounds to ensure light/dark mode compatibility.
+
+5. **Private Tokens:** Never hardcode HEX values. Always use variables.
 
 4. **Simplicity:** Avoid complex hydration; use standard links where possible.
 
