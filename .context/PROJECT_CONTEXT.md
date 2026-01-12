@@ -61,7 +61,7 @@ npm run build    # Production build
 5. **Private Tokens:** Never hardcode HEX values. Always use variables.
 
 4. **Simplicity:** Avoid complex hydration; use standard links where possible.
-6. **Plan Mode:** If the user asks for a plan or evaluation, you MUST propose the strategy and wait for explicit confirmation before writing any code or executing changes.
+6. **Plan Mode:** If the user asks for a plan or evaluation or explicit ask to use plan mode, you MUST propose the strategy and wait for explicit confirmation before writing any code or executing changes.
 ---
 
 ## 📂 Project Structure
