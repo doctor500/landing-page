@@ -34,6 +34,7 @@ const config: Config = {
                     DEFAULT: 'var(--fgColor-default, #e6edf3)',
                     muted: 'var(--fgColor-muted, #7d8590)',
                     subtle: 'var(--fgColor-subtle, #6e7681)',
+                    accent: 'var(--fgColor-accent)',
                 },
                 background: {
                     DEFAULT: 'var(--bgColor-default, #0d1117)',
@@ -43,6 +44,7 @@ const config: Config = {
                 border: {
                     DEFAULT: 'var(--borderColor-default, #30363d)',
                     muted: 'var(--borderColor-muted, #21262d)',
+                    accent: 'var(--borderColor-accent)',
                 },
             },
             fontFamily: {

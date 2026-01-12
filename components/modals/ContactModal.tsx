@@ -139,20 +139,20 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: index * 0.1 }}
-                                        className="group flex items-center gap-4 p-4 rounded-lg bg-glass-item hover:bg-glass-item-hover border border-border-muted hover:border-accent-purple/50 transition-all duration-300"
+                                        className="group flex items-center gap-4 p-4 rounded-lg bg-glass-item hover:bg-glass-item-hover border border-border-muted hover:border-border-accent transition-all duration-300"
                                     >
-                                        <div className="flex-shrink-0 text-accent-purple group-hover:scale-110 transition-transform duration-300">
+                                        <div className="flex-shrink-0 text-foreground-accent group-hover:scale-110 transition-transform duration-300">
                                             {getIcon(link.icon)}
                                         </div>
                                         <div className="flex-1 min-w-0">
-                                            <h3 className="font-semibold text-foreground group-hover:text-accent-purple transition-colors">
+                                            <h3 className="font-semibold text-foreground group-hover:text-foreground-accent transition-colors">
                                                 {link.name}
                                             </h3>
                                             <p className="text-sm text-foreground-muted truncate">
                                                 {link.description}
                                             </p>
                                         </div>
-                                        <div className="flex-shrink-0 text-foreground-muted group-hover:text-accent-purple group-hover:translate-x-1 transition-all duration-300">
+                                        <div className="flex-shrink-0 text-foreground-muted group-hover:text-foreground-accent group-hover:translate-x-1 transition-all duration-300">
                                             <ArrowRightIcon />
                                         </div>
                                     </motion.a>
