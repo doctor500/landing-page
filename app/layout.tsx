@@ -46,7 +46,7 @@ export default function RootLayout({
             data-dark-theme="dark"
         >
             <head>
-                <link rel="stylesheet" href="https://design-token.layardi.com/v1/tokens.css" />
+                <link rel="stylesheet" href="https://design-token.layardi.com/v1.1/tokens.css" />
             </head>
             <body className={`${inter.variable} font-sans`}>
                 <ThemeProvider
