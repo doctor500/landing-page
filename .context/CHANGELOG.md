@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.2.1] - 2026-02-02
+
+### Added
+- **Security Documentation** - Created `.context/SECURITY.md` with comprehensive data privacy guidelines
+  - Sync file security best practices
+  - Data sanitization checklists for LinkedIn and Medium sync
+  - Pre-commit verification steps
+  - Incident response procedures
+- **Enhanced LinkedIn Sync** - Expanded data structure to include detailed profile information
+  - Experience history with full job details
+  - Education, certifications, skills with endorsements
+  - Languages, projects, and recommendations
+- **Security References** - Added cross-references to SECURITY.md in PROCEDURES.md and PROJECT_CONTEXT.md
+
+### Changed
+- **PROCEDURES.md** - Added security reference links to sync procedures
+- **PROJECT_CONTEXT.md** - Updated Related Documentation section with SECURITY.md reference
+
 ## [1.2.0] - 2026-02-02
 
 ### Added

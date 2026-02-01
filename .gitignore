@@ -49,3 +49,6 @@ docs/
 # Private Submodule (Ignored for public repo)
 design-system/
 .gitmodules
+
+# Temporary sync files (on-demand data extraction)
+content/*-sync.json

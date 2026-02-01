@@ -1,0 +1,27 @@
+{
+  "syncDate": "2026-02-02T02:00:00+09:00",
+  "profileUrl": "https://medium.com/@davidlayardi",
+  "author": {
+    "name": "David Layardi",
+    "bio": "Author bio from Medium profile..."
+  },
+  "articles": [
+    {
+      "title": "Example Article Title",
+      "url": "https://medium.com/@davidlayardi/example-article-slug",
+      "publishedDate": "Jan 15, 2026",
+      "readTime": "5 min read",
+      "description": "Article preview or subtitle text extracted from Medium...",
+      "claps": 42
+    },
+    {
+      "title": "Another Article Example",
+      "url": "https://medium.com/@davidlayardi/another-article",
+      "publishedDate": "Dec 20, 2025",
+      "readTime": "8 min read",
+      "description": "Another article description...",
+      "claps": 128
+    }
+  ],
+  "totalArticles": 10
+}

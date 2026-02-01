@@ -137,12 +137,20 @@ landing-page/
 | `personal.json` | Name, role, tagline, bio, email, social URLs |
 | `sections.json` | Section titles and subtitles |
 | `links.json` | Portfolio & contact link metadata |
+| `*-sync.json` | **Temporary sync files** (gitignored) - See `.context/PROCEDURES.md` |
 
 ### To Update Content:
 ```bash
 # Edit JSON files directly - no code changes needed!
 vim content/personal.json
 ```
+
+### Content Sync Procedures
+To extract latest information from LinkedIn or Medium, see `.context/PROCEDURES.md`:
+- **LinkedIn Sync:** Extract current position, headline, about section
+- **Medium Sync:** Extract latest articles and author bio
+- **Output:** Temporary `*-sync.json` files for review before integration
+- **Security:** See `.context/SECURITY.md` for data privacy guidelines
 
 ### Content Loader (`lib/content.ts`)
 - Imports JSON files with TypeScript types
@@ -151,4 +159,10 @@ vim content/personal.json
 
 ---
 
-*For version history, see `.context/CHANGELOG.md`*
+## Related Documentation
+
+- **[GOVERNANCE.md](.context/GOVERNANCE.md)** - AI agent protocols and approval workflows
+- **[PROCEDURES.md](.context/PROCEDURES.md)** - Operational procedures (content sync, design system updates, git submodules)
+- **[SECURITY.md](.context/SECURITY.md)** - Security guidelines for data privacy and sync file management
+- **[CHANGELOG.md](.context/CHANGELOG.md)** - Project version history
+- **[Design System Documentation](design-system/README.md)** - Design tokens and guidelines

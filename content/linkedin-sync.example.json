@@ -1,0 +1,137 @@
+{
+  "syncDate": "2026-02-02T02:00:00+09:00",
+  "profileUrl": "https://www.linkedin.com/in/david-lay",
+  "profile": {
+    "name": "David Layardi",
+    "headline": "Staff Platform Engineer | Kubernetes | Cloud Infrastructure",
+    "location": "Jakarta, Indonesia",
+    "profileImageUrl": "https://media.licdn.com/dms/image/...",
+    "about": "Experienced platform engineer with a passion for building scalable infrastructure. Specializing in Kubernetes, DevOps practices, and cloud-native technologies. Proven track record of designing and implementing robust platform solutions that enable development teams to ship faster and more reliably.\n\nKey areas of expertise:\n• Platform Engineering & Infrastructure as Code\n• Kubernetes & Container Orchestration\n• CI/CD Pipeline Design & Implementation\n• Cloud Architecture (AWS, GCP, Azure)\n• Observability & Monitoring\n\nAlways excited to tackle complex technical challenges and mentor team members.",
+    "currentPosition": {
+      "title": "Staff Platform Engineer",
+      "company": "Tech Company",
+      "companyUrl": "https://www.linkedin.com/company/tech-company",
+      "employmentType": "Full-time",
+      "location": "Jakarta, Indonesia",
+      "startDate": "Jan 2023",
+      "endDate": "Present",
+      "duration": "2 yrs 2 mos",
+      "description": "Leading platform engineering initiatives to improve developer experience and operational efficiency. Responsibilities include:\n• Architecting and maintaining Kubernetes infrastructure serving 100+ microservices\n• Designing GitOps workflows with ArgoCD for declarative deployments\n• Building self-service platforms to reduce deployment time by 70%\n• Implementing observability stack (Prometheus, Grafana, Loki)\n• Mentoring junior engineers on platform best practices"
+    },
+    "experience": [
+      {
+        "title": "Senior Platform Engineer",
+        "company": "Previous Tech Company",
+        "companyUrl": "https://www.linkedin.com/company/previous-company",
+        "employmentType": "Full-time",
+        "location": "Singapore",
+        "startDate": "Mar 2020",
+        "endDate": "Dec 2022",
+        "duration": "2 yrs 10 mos",
+        "description": "Managed cloud infrastructure and automation pipelines for high-traffic applications."
+      },
+      {
+        "title": "DevOps Engineer",
+        "company": "Startup Inc",
+        "companyUrl": "https://www.linkedin.com/company/startup-inc",
+        "employmentType": "Full-time",
+        "location": "Jakarta, Indonesia",
+        "startDate": "Jun 2018",
+        "endDate": "Feb 2020",
+        "duration": "1 yr 9 mos",
+        "description": "Built CI/CD pipelines and maintained AWS infrastructure for SaaS product."
+      }
+    ],
+    "education": [
+      {
+        "school": "University Name",
+        "schoolUrl": "https://www.linkedin.com/school/university-name",
+        "degree": "Bachelor of Science",
+        "fieldOfStudy": "Computer Science",
+        "startDate": "2014",
+        "endDate": "2018",
+        "activities": "Member of Computer Science Club, Hackathon participant"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Certified Kubernetes Administrator (CKA)",
+        "issuingOrganization": "The Linux Foundation",
+        "issueDate": "Sep 2023",
+        "expirationDate": "Sep 2026",
+        "credentialId": "CKA-2023-123456",
+        "credentialUrl": "https://ti-user-certificates.s3.amazonaws.com/..."
+      },
+      {
+        "name": "AWS Certified Solutions Architect - Professional",
+        "issuingOrganization": "Amazon Web Services (AWS)",
+        "issueDate": "Mar 2022",
+        "expirationDate": "Mar 2025",
+        "credentialId": "AWS-SAP-123456",
+        "credentialUrl": "https://www.credly.com/badges/..."
+      }
+    ],
+    "skills": {
+      "top": [
+        {
+          "name": "Kubernetes",
+          "endorsements": 47
+        },
+        {
+          "name": "Platform Engineering",
+          "endorsements": 38
+        },
+        {
+          "name": "DevOps",
+          "endorsements": 52
+        },
+        {
+          "name": "Infrastructure as Code",
+          "endorsements": 31
+        },
+        {
+          "name": "CI/CD",
+          "endorsements": 44
+        }
+      ],
+      "all": [
+        "Docker",
+        "Terraform",
+        "AWS",
+        "GCP",
+        "ArgoCD",
+        "Prometheus",
+        "Grafana",
+        "GitOps",
+        "Helm",
+        "Python",
+        "Go",
+        "Linux",
+        "Networking",
+        "Monitoring"
+      ]
+    },
+    "languages": [
+      {
+        "name": "English",
+        "proficiency": "Professional working proficiency"
+      },
+      {
+        "name": "Indonesian",
+        "proficiency": "Native or bilingual proficiency"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Enterprise Kubernetes Platform",
+        "description": "Designed and implemented multi-cluster Kubernetes platform supporting 500+ developers",
+        "url": "https://github.com/company/k8s-platform"
+      }
+    ],
+    "recommendations": {
+      "received": 8,
+      "given": 5
+    },
+    "connections": "500+"
+  }
+}
