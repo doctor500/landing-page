@@ -54,6 +54,9 @@ npm run build    # Production build
 
 ## 📏 Development Guidelines
 
+> [!IMPORTANT]
+> **AI Agent Governance:** All AI agents MUST read `.context/GOVERNANCE.md` before making any changes. Default mode is **Approval Mode** — always ask before executing.
+
 1. **Content System:** 
    - **Text Content:** JSON files in `content/` directory
    - **Complex Data:** Arrays & objects in `lib/data.ts`
@@ -65,14 +68,13 @@ npm run build    # Production build
    - **Dark Mode:** `[data-color-mode="dark"]` selector (Tailwind config).
    - **Responsive:** Mobile `px-4` → Desktop `80px` padding.
 
-4. **Semantic Styling:**
+3. **Semantic Styling:**
    - **Colors:** Use semantic tokens (e.g., `text-foreground-accent`) instead of hardcoded values (`text-accent-cyan`).
    - **Glassmorphism:** Use `--bgColor-glass`, `--bgColor-glass-item` for modal backgrounds to ensure light/dark mode compatibility.
 
-5. **Private Tokens:** Never hardcode HEX values. Always use variables.
+4. **Private Tokens:** Never hardcode HEX values. Always use variables.
 
-4. **Simplicity:** Avoid complex hydration; use standard links where possible.
-6. **Plan Mode:** If the user asks for a plan or evaluation or explicit ask to use plan mode, you MUST propose the strategy and wait for explicit confirmation before writing any code or executing changes.
+5. **Simplicity:** Avoid complex hydration; use standard links where possible.
 ---
 
 ## 📂 Project Structure

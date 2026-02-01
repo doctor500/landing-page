@@ -67,11 +67,14 @@ Examples:
 
 ## 💡 For AI Agents
 
-1. Read `.context/PROJECT_CONTEXT.md` first
-2. Use design system tokens for all styling
-3. Keep changes simple (complexity failed before)
-4. Update changelog when completing features
-5. **Documentation Rule:** Do NOT create new markdown files
+> **⚠️ MANDATORY:** Read `.context/GOVERNANCE.md` BEFORE making any changes!
+
+1. **Governance:** Follow `.context/GOVERNANCE.md` — Default is **Approval Mode**
+2. **Context:** Read `.context/PROJECT_CONTEXT.md` for project details
+3. **Styling:** Use design system tokens for all styling
+4. **Simplicity:** Keep changes simple (complexity failed before)
+5. **Changelog:** Update changelog when completing features
+6. **Documentation Rule:** Do NOT create new markdown files
    - Update existing `.context/` files instead
    - Keep project clean (no redundant docs)
    - Only add essential information

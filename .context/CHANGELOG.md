@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0] - 2026-02-02
+
+### Added
+- **AI Agent Governance Framework:** Created `.context/GOVERNANCE.md` to establish formal protocols for AI agent interaction
+  - Approval Mode (Default): Requires explicit user approval before executing changes
+  - Auto Pilot Mode (Opt-in): Fast mode for experienced users
+  - Project-specific rules for web app development, design system, Git submodules
+  - Pre-flight checks and example workflows
+- Updated `PROJECT_CONTEXT.md` and `GEMINI.md` to reference governance documentation
+
 ## [1.1.1] - 2026-01-12
 
 ### Fixed
