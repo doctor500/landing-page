@@ -52,3 +52,5 @@ design-system/
 
 # Temporary sync files (on-demand data extraction)
 content/*-sync.json
+# But include medium-sync.json for production (needed by articles section)
+!content/medium-sync.json

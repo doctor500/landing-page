@@ -1,0 +1,64 @@
+{
+  "syncDate": "2026-02-02T03:26:00+09:00",
+  "profileUrl": "https://medium.com/@davidlayardi",
+  "author": {
+    "name": "David Layardi",
+    "username": "@davidlayardi",
+    "bio": "Code Savvy | Pipeline & Automation enthusiast. Focus on learning and implementing DevOps culture | 🌐 https://layardi.com",
+    "followers": 28,
+    "following": 30,
+    "websiteUrl": "https://layardi.com"
+  },
+  "articles": [
+    {
+      "title": "Accessing GCP Secret Manager from GKE Cluster using Murmur",
+      "url": "https://davidlayardi.medium.com/accessing-gcp-secret-manager-from-gke-cluster-using-murmur-34c679f25333",
+      "publishedDate": "Apr 16, 2024",
+      "readingTime": "3 min read",
+      "claps": 1,
+      "responses": 1,
+      "preview": "Secret manager implementation is one of the industry's best practices that currently are ubiquitous standards. The awareness of secret…"
+    },
+    {
+      "title": "How Cloudflare Zero Trust & VS Code Tunnels Reducing My Back Pain",
+      "url": "https://davidlayardi.medium.com/how-cloudflare-trust-zero-vs-code-tunnels-reducing-my-back-pain-67c38c506a28",
+      "publishedDate": "Apr 15, 2023",
+      "readingTime": "4 min read",
+      "claps": 41,
+      "responses": 0,
+      "preview": "Sounds silly, but it's real. Cloudflare Zero Trust (CZT) & VS Code Remote Tunnels being part of helps me reduce my back pain..."
+    },
+    {
+      "title": "Automate Export From Jenkins API Job List to Google Sheets Using Google Apps Script",
+      "url": "https://medium.com/geekculture/automate-export-from-jenkins-api-job-list-to-google-sheets-using-google-apps-script-2eef44008bdc",
+      "publishedDate": "Aug 20, 2021",
+      "readingTime": "4 min read",
+      "claps": 19,
+      "responses": 0,
+      "preview": "One day… you were asked to create a list of data that comes from an API to a common platform appearance that will be easier for the…"
+    },
+    {
+      "title": "Easy Deploy SonarQube on Kubernetes with YAML configuration",
+      "url": "https://medium.com/codex/easy-deploy-sonarqube-on-kubernetes-with-yaml-configuration-6e94f1345466",
+      "publishedDate": "Jul 22, 2021",
+      "readingTime": "5 min read",
+      "claps": 67,
+      "responses": 1,
+      "preview": "SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with…"
+    },
+    {
+      "title": "Pengalaman 3+1 (Enrichment Program) bersama Bapak Ali Gunawan, S.Kom., M.M. @ Binus University",
+      "url": "https://davidlayardi.medium.com/pengalaman-3-1-enrichment-program-bersama-bapak-ali-gunawan-s-kom-m-m-binus-university-2ade7285a210",
+      "publishedDate": "Jun 13, 2020",
+      "readingTime": "4 min read",
+      "claps": 12,
+      "responses": 0,
+      "preview": "Tulisan ini saya dedikasikan sebagai bentuk apresiasi kepada Pak Ali Gunawan, S.Kom., M.M. yang telah membimbing saya selama menjalankan…"
+    }
+  ],
+  "stats": {
+    "totalArticles": 5,
+    "totalClaps": 140,
+    "totalResponses": 2
+  }
+}
