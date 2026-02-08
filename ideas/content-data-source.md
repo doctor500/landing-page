@@ -2,7 +2,7 @@
 
 > **Data Source Document**  
 > This document contains extracted and analyzed data from LinkedIn, GitHub, and other sources.  
-> Last Updated: 2025-12-26
+> Last Updated: 2026-02-07
 
 ---
 
@@ -14,29 +14,22 @@
 **Total Experience:** 6+ years in Infrastructure & Platform Engineering  
 **Industries:** E-commerce, Government Tech, Fintech, Travel Tech
 
-### Experience Timeline
+### Experience Timeline (Infrastructure/DevOps Focus)
 ```
 2025-Present  → Rakuten (CI/CD Platform Engineering)
 2024-2025     → GovTech Procurement (Infrastructure Engineering)
 2021-2023     → GoTo Group (DevOps Engineering)
 2020-2021     → Pegipegi (Release Engineering)
 2018-2020     → BINUS IT Division (Data Center Operations)
-2017-2018     → BINUS IT Division (System Analyst)
-2016-2019     → Freelance Web Development
 ```
 
 ### Career Focus Distribution
-**Primary Focus (Infrastructure & DevOps):** ~85%
+**Focus (Infrastructure & DevOps):** 100%
 - CI/CD Platform Engineering
 - Cloud Infrastructure (GCP, AWS)
 - Kubernetes & Container Orchestration
 - Infrastructure as Code (Terraform)
 - Site Reliability Engineering
-
-**Early Career (Software Development):** ~15%
-- Web Development (PHP, JavaScript)
-- Data Engineering
-- System Analysis
 
 ---
 
@@ -66,7 +59,7 @@
 
 ### 1. Software Engineer - CI/CD Platform
 **Rakuten** | Tokyo, Japan  
-*Oct 2025 - Present (3 months)*
+*Oct 2025 - Present (dynamically calculated)*
 
 **Focus:** CI/CD platform development and automation
 
@@ -542,11 +535,9 @@ Industry Recognition:    Featured in community projects
 - GitHub Repositories (All public data)
 - Professional statistics and metrics
 
-### ⚠️ Pending / Requires Login
+### ✅ Medium Profile
 **Medium Profile** (https://medium.com/@davidlayardi)
-- Status: 403 Forbidden without authentication
-- **Action Required:** Please provide login credentials OR manually share article list
-- **Alternative:** Export Medium data via Medium settings
+- Status: Resolved - data extracted to `content/medium-sync.example.json`
 
 ### 📝 Recommended Next Steps
 1. Review and validate all extracted data

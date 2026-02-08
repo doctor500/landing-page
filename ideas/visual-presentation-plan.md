@@ -96,10 +96,10 @@ across E-commerce, GovTech, and Fintech
 **Visualization Type:** Interactive horizontal timeline
 
 ```
-2016 ──┬── 2017 ──┬── 2018 ──┬── 2020 ──┬── 2021 ──┬── 2024 ──┬── 2025
-       │          │          │          │          │          │
-    Freelance  BINUS IT  Data Ctr  Pegipegi  GoTo Grp  GovTech  Rakuten
-     (Web)    (Analyst)  (Staff)  (Release) (DevOps) (Infra)   (CI/CD)
+2018 ──────┬── 2020 ──────┬── 2021 ──────┬── 2024 ──────┬── 2025
+           │              │              │              │
+       Data Ctr       Pegipegi       GoTo Grp       GovTech    Rakuten
+       (Staff)        (Release)      (DevOps)       (Infra)    (CI/CD)
 ```
 
 **Interaction:**
@@ -327,21 +327,23 @@ Displaying 5 main areas:
 
 **Concept:**
 ```
-Technologies        Roles              Companies
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PHP/JS  ─┐
-         ├──→ Web Dev  ──┐
-Docker  ─┤              ├──→ Freelance
-        └──→ Sys Analyst┴──→ BINUS IT
-                            ↓
-Kubernetes ──┐              
-CI/CD  ──────┼──→ DevOps ───→ Pegipegi
-Terraform ───┘                  ↓
-                                GoTo Group
-GCP/AWS ─────┐                  ↓
-IaC  ────────┼──→ Infra Eng.─→ GovTech
-Automation ──┘                  ↓
-                                Rakuten
+Technologies              Roles              Companies
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Linux/Datacenter ─────→ Data Center Staff ──→ BINUS IT
+                                               ↓
+Kubernetes ──────┐                            
+CI/CD  ──────────┼────→ Release Engineer ───→ Pegipegi
+Docker ──────────┘                              ↓
+                                               
+GCP/AWS ─────────┐                             
+Terraform ───────┼────→ DevOps Engineer ────→ GoTo Group
+Vault ───────────┘                              ↓
+                                               
+GKE/IaC ─────────┐                             
+Teleport ────────┼────→ Infra Engineer ─────→ GovTech
+Cloud Run ───────┘                              ↓
+                                               
+Jenkins/Harbor ──┼────→ CI/CD Platform ─────→ Rakuten
 ```
 
 **Alternative:** Timeline with technology tags

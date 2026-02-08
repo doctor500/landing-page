@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { careerTimeline } from '@/lib/data'
 import { sections } from '@/lib/content'
+import { getDynamicDuration } from '@/lib/utils'
 
 /**
  * Career Timeline Component
@@ -53,7 +54,7 @@ function TimelineItem({ position, index, isExpanded, onClick }: TimelineItemProp
                                 {position.company}
                             </h3>
                             <span className="text-sm text-accent-cyan font-mono">
-                                {position.duration}
+                                {getDynamicDuration(position.period, position.duration)}
                             </span>
                         </div>
 

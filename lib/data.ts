@@ -111,26 +111,6 @@ export const careerTimeline: CareerPosition[] = [
             'One-click reporting process'
         ],
         technologies: ['Pentaho', 'PHP Laravel', 'MySQL']
-    },
-    {
-        company: 'BINUS IT Division',
-        role: 'System Analyst',
-        location: 'Jakarta, Indonesia',
-        period: '2017 - 2018',
-        duration: '1 year',
-        description: 'System analysis and requirements gathering',
-        achievements: [],
-        technologies: []
-    },
-    {
-        company: 'Freelance',
-        role: 'Web Developer',
-        location: 'Indonesia',
-        period: '2016 - 2019',
-        duration: '3 years',
-        description: 'Freelance web development projects',
-        achievements: [],
-        technologies: ['PHP', 'JavaScript', 'MySQL']
     }
 ]
 

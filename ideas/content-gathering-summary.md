@@ -8,7 +8,7 @@
 - **Profile URL:** https://www.linkedin.com/in/david-lay/
 - **Data Extracted:**
   - Complete professional summary
-  - 6+ years of career history (8 roles)
+  - 6+ years of career history (5 Infrastructure/DevOps roles)
   - 20+ infrastructure projects documented
   - 2 detailed recommendations (Felix Jingga - CTO, Andreas Cendranata - Infrastructure Lead)
   - 29 total recommendations count
@@ -36,10 +36,9 @@
 3. `jenkins-psl` - Pipeline shared library
 4. `learnwith-docker` - Docker learning resources
 
-#### Medium Profile ⚠️
+#### Medium Profile ✅
 - **Profile URL:** https://medium.com/@davidlayardi
-- **Status:** 403 Forbidden (requires authentication)
-- **Action Required:** Please provide login credentials OR manually share article list
+- **Status:** Resolved - data extracted to `content/medium-sync.example.json`
 
 ---
 
@@ -92,10 +91,10 @@
 ## 📊 Key Statistics Extracted
 
 ### Career Highlights
-- **Total Experience:** 6+ years
-- **Companies:** 5 (Freelance → BINUS → Pegipegi → GoTo → GovTech → Rakuten)
+- **Total Experience:** 6+ years (Infrastructure/DevOps)
+- **Companies:** 5 (BINUS Data Center → Pegipegi → GoTo → GovTech → Rakuten)
 - **Current Role:** Software Engineer - CI/CD Platform @ Rakuten, Tokyo
-- **Focus:** Infrastructure Engineering (85%), Early Software Dev (15%)
+- **Focus:** 100% Infrastructure & DevOps Engineering
 
 ### Technical Impact
 - **Cost Optimization:** 90%+ cost reduction achieved
