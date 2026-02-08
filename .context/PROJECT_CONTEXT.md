@@ -3,7 +3,7 @@
 **Project:** David Layardi Personal Landing Page  
 **Framework:** Next.js 14 + TypeScript  
 **Live Site:** [https://www.layardi.com](https://www.layardi.com)  
-**Last Updated:** 2026-01-12
+**Last Updated:** 2026-02-09
 
 ---
 
@@ -87,7 +87,8 @@ landing-page/
 ├── content/               # JSON Content Files
 │   ├── personal.json     # Personal info, bio, URLs
 │   ├── sections.json     # Section titles & subtitles
-│   └── links.json        # Portfolio & contact link metadata
+│   ├── links.json        # Portfolio & contact link metadata
+│   └── medium-sync.json  # Medium articles data
 ├── app/
 │   ├── layout.tsx        # Root + ThemeProvider
 │   ├── page.tsx          # Main Layout
@@ -95,7 +96,8 @@ landing-page/
 ├── components/
 │   ├── hero-section.tsx  # Hero with CTA modal triggers
 │   ├── career-timeline.tsx
-│   ├── stats-dashboard.tsx
+│   ├── stats-dashboard.tsx # System monitoring style
+│   ├── articles-section.tsx # Medium articles display
 │   ├── testimonials.tsx
 │   ├── floating-nav.tsx
 │   ├── theme-toggle.tsx
@@ -104,7 +106,8 @@ landing-page/
 │       └── ContactModal.tsx
 ├── lib/
 │   ├── data.ts           # Complex data (career, stats, etc.)
-│   └── content.ts        # TypeScript loader for JSON content
+│   ├── content.ts        # TypeScript loader for JSON content
+│   └── utils.ts          # Utility functions (duration calc)
 └── public/CNAME          # Domain Config
 ```
 
@@ -118,8 +121,9 @@ landing-page/
 
 ### Section Components
 - `HeroSection` - Name, role, tagline, stats counters, CTA buttons with modal triggers
-- `StatsDashboard` - Key metrics display
-- `CareerTimeline` - Expandable career history
+- `StatsDashboard` - System monitoring style with progress bars and status indicators
+- `ArticlesSection` - Latest 3 Medium articles with View More button
+- `CareerTimeline` - Expandable career history with dynamic duration
 - `Testimonials` - Auto-rotating carousel with progress bar
 
 ### Modal Components (NEW)

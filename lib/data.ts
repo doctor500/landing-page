@@ -114,42 +114,42 @@ export const careerTimeline: CareerPosition[] = [
     }
 ]
 
-// Key Statistics
+// Key Statistics - System Monitoring Style
 export const stats: Stat[] = [
     {
         value: '90%+',
-        label: 'Cost Reduction',
-        sublabel: 'Infrastructure Optimization',
+        label: 'Cost Savings',
+        sublabel: '$2M+ annually',
         icon: 'chart'
     },
     {
         value: '99.9%',
-        label: 'Uptime',
-        sublabel: 'System Availability',
+        label: 'Availability',
+        sublabel: 'Zero downtime',
         icon: 'shield'
     },
     {
         value: '600+',
-        label: 'Services',
-        sublabel: 'Migrated to Cloud',
+        label: 'Migrations',
+        sublabel: 'Services to cloud',
         icon: 'cloud'
     },
     {
-        value: '6+',
-        label: 'Years',
-        sublabel: 'Infrastructure Experience',
+        value: '85%',
+        label: 'Build Time',
+        sublabel: 'Reduction achieved',
         icon: 'rocket'
     },
     {
-        value: '20+',
-        label: 'Projects',
-        sublabel: 'Infrastructure Deliveries',
+        value: '100%',
+        label: 'IaC Adoption',
+        sublabel: 'Terraform managed',
         icon: 'projects'
     },
     {
-        value: '29',
-        label: 'Recommendations',
-        sublabel: 'LinkedIn Testimonials',
+        value: '7+',
+        label: 'Years',
+        sublabel: 'Platform engineering',
         icon: 'quote'
     }
 ]

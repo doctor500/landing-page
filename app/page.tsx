@@ -1,6 +1,7 @@
 import { HeroSection } from '@/components/hero-section'
 import { CareerTimeline } from '@/components/career-timeline'
 import { StatsDashboard } from '@/components/stats-dashboard'
+import { ArticlesSection } from '@/components/articles-section'
 import { Testimonials } from '@/components/testimonials'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { FloatingNav } from '@/components/floating-nav'
@@ -10,7 +11,8 @@ import { FloatingNav } from '@/components/floating-nav'
  * 
  * Sections:
  * - Hero with animated stats
- * - Stats dashboard with metrics
+ * - Stats dashboard with metrics (monitoring style)
+ * - Latest articles from Medium
  * - Career timeline with positions
  * - Testimonials carousel
  */
@@ -33,6 +35,9 @@ export default function Home() {
 
             {/* Stats Dashboard */}
             <StatsDashboard />
+
+            {/* Latest Articles */}
+            <ArticlesSection />
 
             {/* Career Timeline */}
             <CareerTimeline />

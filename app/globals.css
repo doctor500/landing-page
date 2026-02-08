@@ -65,6 +65,58 @@
     .stat-card {
         @apply glass-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
     }
+
+    /* Monitoring card for dashboard */
+    .monitoring-card {
+        @apply glass-card p-6 transition-all duration-300 hover:-translate-y-1;
+        border-left: 3px solid var(--fgColor-accent, theme('colors.accent-cyan'));
+    }
+
+    .monitoring-card:hover {
+        box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.15);
+    }
+
+    /* Progress bar for monitoring dashboard */
+    .progress-bar-container {
+        @apply w-full h-2 rounded-full overflow-hidden;
+        background-color: var(--bgColor-neutral-muted, rgba(255, 255, 255, 0.1));
+    }
+
+    .progress-bar-fill {
+        @apply h-full rounded-full;
+        background: linear-gradient(90deg, theme('colors.accent-cyan'), theme('colors.accent-purple'));
+    }
+
+    /* Status indicator with pulse animation */
+    .status-indicator-pulse {
+        @apply w-3 h-3 rounded-full;
+        background-color: var(--fgColor-success, #3fb950);
+        animation: pulse-status 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-status {
+
+        0%,
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.6;
+            transform: scale(0.9);
+        }
+    }
+
+    /* Article card for articles section */
+    .article-card {
+        @apply glass-card p-6 transition-all duration-300 hover:-translate-y-1;
+        border-left: 3px solid transparent;
+    }
+
+    .article-card:hover {
+        border-left-color: var(--fgColor-accent, theme('colors.accent-cyan'));
+    }
 }
 
 /* Utility classes */

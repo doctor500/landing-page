@@ -53,14 +53,19 @@ interface StatCardProps {
 function StatCard({ value, label, sublabel, index }: StatCardProps) {
     const isPercentage = value.includes('%')
     const isPlus = value.includes('+')
-    const numericValue = parseInt(value.replace(/[^0-9]/g, ''))
+    const hasDecimal = value.includes('.')
+    // For decimals like 99.9%, don't animate - just show the value
+    const numericValue = hasDecimal ? 0 : parseInt(value.replace(/[^0-9]/g, ''))
     const animatedValue = useCounter(numericValue, 2000)
 
-    const displayValue = isPercentage
-        ? `${animatedValue}${isPlus ? '+' : ''}%`
-        : isPlus
-            ? `${animatedValue}+`
-            : animatedValue.toString()
+    // For decimal values, show static; otherwise animate
+    const displayValue = hasDecimal
+        ? value  // Show original value for decimals
+        : isPercentage
+            ? `${animatedValue}${isPlus ? '+' : ''}%`
+            : isPlus
+                ? `${animatedValue}+`
+                : animatedValue.toString()
 
     return (
         <motion.div

@@ -1,5 +1,39 @@
 # Changelog
 
+## [1.3.0] - 2026-02-09
+
+### Added
+- **Articles Section** - New component displaying latest Medium articles
+  - Loads from `content/medium-sync.json`
+  - Shows 3 latest English articles with title, date, read time, claps
+  - "View More on Medium" button links to full profile
+  - Article cards with hover effects and preview text
+
+- **System Monitoring Dashboard** - Refactored stats-dashboard.tsx
+  - "System Status: OPERATIONAL" header with pulse indicator
+  - Progress bar visualizations for percentage metrics
+  - Monitoring card design with cyan accent borders
+  - New metrics: Cost Savings, Availability, Migrations, Build Time, IaC Adoption, Years (7+)
+
+- **Dynamic Duration Calculation** - `lib/utils.ts`
+  - Auto-calculates current position tenure
+  - `getDynamicDuration()` for timeline display
+
+### Changed
+- **Hero Section Branding** - AI-ready positioning
+  - Role: "Infrastructure & Automation Engineer"
+  - Tagline: "Building AI-Ready Infrastructure • Context Engineering Enthusiast"
+  - Bio updated to 7+ years with cloud-native focus
+- **Stats Data** - Updated `lib/data.ts` with impact-focused metrics
+- **Career Timeline** - Focused on 5 Infrastructure/DevOps roles (removed web dev positions)
+
+### Fixed
+- **Stat Card Animation** - Fixed 99.9% displaying as 999% by handling decimal values
+
+### Documentation
+- Updated all `ideas/` files with current state and visual presentation plans
+- Updated PROJECT_CONTEXT.md with new components
+
 ## [1.2.1] - 2026-02-02
 
 ### Added

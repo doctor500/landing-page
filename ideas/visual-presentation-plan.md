@@ -1,573 +1,313 @@
-# Landing Page - Visual & Data Presentation Plan
+# Visual Presentation Plan
 
-> **Design Planning Document**  
-> Dashboard-style modern landing page for David Layardi  
-> Focus: Infrastructure Engineering Career + Portfolio
+> **Design and layout specifications for landing page**  
+> Last Updated: 2026-02-09
 
 ---
 
 ## 🎨 Design Direction
 
-### Style: Modern Dashboard + Portfolio Hybrid
-- **Primary Aesthetic:** Data-driven, professional, tech-forward
-- **Visual Style:** Glassmorphism, dark mode, vibrant accents
-- **Animation:** Smooth, subtle, purposeful
-- **Layout:** Card-based, grid system, asymmetric balance
+### Overall Aesthetic
+- **Style:** System monitoring dashboard meets portfolio
+- **Theme:** Dark mode primary, light mode supported
+- **Feel:** Technical, professional, data-driven
+- **Inspiration:** Infrastructure monitoring dashboards (Grafana, Datadog)
 
-### Color Palette Suggestion
+### Design Principles
+1. **Data-Driven:** Metrics and achievements front and center
+2. **Technical Credibility:** Show real numbers and impact
+3. **Clean & Modern:** Glassmorphism, subtle animations
+4. **Responsive:** Mobile-first, works on all devices
+
+---
+
+## 🖼️ Section Layouts
+
+### 1. Hero Section (Current)
+**Layout:** 60/40 split - text left, mini stats right
+
+```
+┌────────────────────────────────────────────────────────────┐
+│ ◐ Hello, I'm                                    ┌────────┐ │
+│                                                 │ 90%+   │ │
+│ DAVID LAYARDI                                   │ Cost   │ │
+│                                                 └────────┘ │
+│ Infrastructure & Automation Engineer            ┌────────┐ │
+│                                                 │ 99.9%  │ │
+│ Building AI-Ready Infrastructure •              │ Uptime │ │
+│ Context Engineering Enthusiast                  └────────┘ │
+│                                                 ┌────────┐ │
+│ [View My Work] [Let's Connect]                  │ 600+   │ │
+│                                                 │Service│ │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 2. Stats Dashboard (Refactored)
+**Layout:** System monitoring style with status header
+
+```
+┌────────────────────────────────────────────────────────────┐
+│  ◉ SYSTEM STATUS                              OPERATIONAL  │
+├────────────────────────────────────────────────────────────┤
+│                                                            │
+│  INFRASTRUCTURE METRICS                                    │
+│  Real-time achievements from infrastructure engineering    │
+│                                                            │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────┐│
+│  │ COST SAVINGS    │  │ AVAILABILITY    │  │ MIGRATIONS  ││
+│  │                 │  │                 │  │             ││
+│  │ ████████░░ 90%  │  │ ●●●●● 99.9%     │  │    600+     ││
+│  │                 │  │                 │  │   services  ││
+│  │ $2M+ annually   │  │ zero downtime   │  │   to cloud  ││
+│  └─────────────────┘  └─────────────────┘  └─────────────┘│
+│                                                            │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────┐│
+│  │ BUILD TIME      │  │ IAC ADOPTION    │  │ EXPERIENCE  ││
+│  │                 │  │                 │  │             ││
+│  │ ████████░░ -85% │  │ ██████████ 100% │  │    6+ yrs   ││
+│  │                 │  │                 │  │  platform   ││
+│  │ CI/CD optimized │  │ Terraform       │  │  engineering││
+│  └─────────────────┘  └─────────────────┘  └─────────────┘│
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+**Card Components:**
+- Progress bar for percentage metrics
+- Uptime dots indicator (5 dots = 99.9%)
+- Large counters for volume metrics
+- Subtle hover animations
+
+---
+
+### 3. Latest Articles Section (NEW)
+**Layout:** 3-column cards with article previews
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                                                            │
+│  Latest Articles                                           │
+│  Insights on infrastructure, automation, and cloud-native  │
+│                                                            │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │ 📝 Accessing GCP Secret Manager from GKE Cluster... │  │
+│  │ Apr 16, 2024 • 3 min read                           │  │
+│  │                                                      │  │
+│  │ Secret manager implementation is one of the         │  │
+│  │ industry's best practices that currently are...     │  │
+│  │                                            [Read →] │  │
+│  └─────────────────────────────────────────────────────┘  │
+│                                                            │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │ 📝 How Cloudflare Zero Trust & VS Code Tunnels...   │  │
+│  │ Apr 15, 2023 • 4 min read • 41 claps               │  │
+│  │                                                      │  │
+│  │ Sounds silly, but it's real. Cloudflare Zero        │  │
+│  │ Trust & VS Code Remote Tunnels being part of...     │  │
+│  │                                            [Read →] │  │
+│  └─────────────────────────────────────────────────────┘  │
+│                                                            │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │ 📝 Easy Deploy SonarQube on Kubernetes with...      │  │
+│  │ Jul 22, 2021 • 5 min read • 67 claps               │  │
+│  │                                                      │  │
+│  │ SonarQube is an open-source platform developed      │  │
+│  │ by SonarSource for continuous inspection of...      │  │
+│  │                                            [Read →] │  │
+│  └─────────────────────────────────────────────────────┘  │
+│                                                            │
+│              [ View More on Medium → ]                     │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+**Card Details:**
+- Title (truncated if too long)
+- Publication date + read time
+- Claps count (if > 10)
+- Preview text (2 lines)
+- Hover: subtle lift effect
+
+---
+
+### 4. Career Timeline (Current)
+**Layout:** Vertical timeline with expandable cards
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                                                            │
+│  Career Journey                                            │
+│  Professional experience in infrastructure engineering     │
+│                                                            │
+│  ●─── Rakuten | Oct 2025 - Present                        │
+│  │    Software Engineer - CI/CD Platform                   │
+│  │    Tokyo, Japan                                         │
+│  │                                    [View Details ▼]     │
+│  │                                                         │
+│  ●─── GovTech Procurement | Jan 2024 - Sep 2025           │
+│  │    Infrastructure Engineer                              │
+│  │    Indonesia                                            │
+│  │                                    [View Details ▼]     │
+│  │                                                         │
+│  ●─── GoTo Group | Nov 2021 - Dec 2023                    │
+│  │    DevOps Engineer                                      │
+│  │    Jakarta, Indonesia                                   │
+│  │                                    [View Details ▼]     │
+│  │                                                         │
+│  ●─── Pegipegi | Mar 2020 - Oct 2021                      │
+│  │    Release Engineer                                     │
+│  │                                    [View Details ▼]     │
+│  │                                                         │
+│  ●─── BINUS IT Division | Mar 2018 - Feb 2020             │
+│       Data Center Staff                                    │
+│                                       [View Details ▼]     │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 5. Testimonials (Current)
+**Layout:** Auto-rotating carousel with progress bar
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                                                            │
+│  What People Say                                           │
+│                                                            │
+│  ┌─────────────────────────────────────────────────────┐  │
+│  │                                                      │  │
+│  │  "If I had to describe David in one word, it        │  │
+│  │   would be 'unflappable'. He was a cornerstone      │  │
+│  │   of the team that achieved a staggering 90%+       │  │
+│  │   reduction in our monthly infrastructure costs...  │  │
+│  │                                                      │  │
+│  │             — Felix Jingga, CTO                     │  │
+│  │               GovTech Procurement                   │  │
+│  │                                                      │  │
+│  │  ═══════════════════════░░░░░░░  [progress bar]     │  │
+│  └─────────────────────────────────────────────────────┘  │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🎨 Design Tokens Usage
+
+### Colors (from design system)
 ```css
-/* Dark Mode Base */
---bg-primary: #0a0e27
---bg-secondary: #1a1f3a
---glass-bg: rgba(255, 255, 255, 0.05)
+/* Primary accents */
+--accent-cyan: var(--bgColor-accent-emphasis)
+--accent-purple: var(--fgColor-done)
 
-/* Accent Colors */
---accent-primary: #00d9ff (Cyan - Cloud/Tech)
---accent-secondary: #7c3aed (Purple - Innovation)
---accent-success: #10b981 (Green - Uptime/Success)
---accent-warning: #f59e0b (Orange - Alert/Impact)
+/* Status colors for dashboard */
+--color-success: var(--fgColor-success)   /* Green - operational */
+--color-warning: var(--fgColor-attention) /* Yellow - pending */
+--color-danger: var(--fgColor-danger)     /* Red - error */
 
-/* Text */
---text-primary: #ffffff
---text-secondary: #a0aec0
---text-muted: #64748b
+/* Backgrounds */
+--bg-primary: var(--bgColor-default)
+--bg-card: var(--bgColor-muted)
+--bg-glass: var(--bgColor-glass)
 ```
 
----
-
-## 📐 Section Breakdown
-
-### 1. Hero Section (Full Viewport)
-
-**Layout:** Split screen (60/40)
-
-**Left Side (60%):**
-```
-[Animated Greeting]
-Hi, I'm David Layardi
-
-[Main Headline - Large, Bold]
-Infrastructure Engineer
-Building Scalable Cloud Systems
-
-[Subheadline]
-6+ years driving infrastructure modernization
-across E-commerce, GovTech, and Fintech
-
-[CTA Buttons]
-[View My Work] [Let's Connect]
-```
-
-**Right Side (40%):**
-```
-[Floating Stats Cards with Icons]
-
-┌─────────────────┐
-│   90%+ Cost     │
-│   Reduction     │ [Chart Icon]
-└─────────────────┘
-
-┌─────────────────┐
-│   99.9%         │
-│   Uptime        │ [Shield Icon]
-└─────────────────┘
-
-┌─────────────────┐
-│   600+          │
-│   Services      │ [Cloud Icon]
-└─────────────────┘
-
-┌─────────────────┐
-│   6+            │
-│   Years         │ [Rocket Icon]
-└─────────────────┘
-```
-
-**Visual Effect:** 
-- Animated number counters
-- Cards with glassmorphism effect
-- Subtle float/hover animations
-- Particle background (optional)
-
----
-
-### 2. Career Timeline (Horizontal Scroll)
-
-**Visualization Type:** Interactive horizontal timeline
-
-```
-2018 ──────┬── 2020 ──────┬── 2021 ──────┬── 2024 ──────┬── 2025
-           │              │              │              │
-       Data Ctr       Pegipegi       GoTo Grp       GovTech    Rakuten
-       (Staff)        (Release)      (DevOps)       (Infra)    (CI/CD)
-```
-
-**Interaction:**
-- Click company name → expand details
-- Color coding by role type
-- Progress line with milestones
-- Mobile: Vertical timeline instead
-
-**Data Display:**
-- Company logo
-- Role title
-- Duration
-- Key achievement (1 line)
-
----
-
-### 3. Impact Dashboard (Grid Layout)
-
-**Layout:** 3-column grid (responsive to 1-column mobile)
-
-```
-┌─────────────────┬─────────────────┬─────────────────┐
-│  COST SAVINGS   │  AVAILABILITY   │  SCALE          │
-│                 │                 │                 │
-│    [90%+]       │    [99.9%]      │   [600+]        │
-│  Gauge Chart    │  Circular Chart │  Counter        │
-│                 │                 │                 │
-│  Infrastructure │  System Uptime  │  Services       │
-│  Cost Reduction │  Maintained     │  Migrated       │
-└─────────────────┴─────────────────┴─────────────────┘
-
-┌─────────────────┬─────────────────┬─────────────────┐
-│  PROJECTS       │  CERTIFICATIONS │  RECOMMENDATIONS│
-│                 │                 │                 │
-│    [20+]        │     [8+]        │    [29]         │
-│  Icon Grid      │  Badge Display  │  Quote Icon     │
-│                 │                 │                 │
-│  Infrastructure │  Cloud & DevOps │  LinkedIn       │
-│  Deliveries     │  Certified      │  Testimonials   │
-└─────────────────┴─────────────────┴─────────────────┘
-```
-
-**Styling:**
-- Each card: glass effect, border gradient
-- Charts: Animated on scroll into view
-- Icons: Custom SVG or font-awesome
-- Hover: Subtle scale + glow effect
-
----
-
-### 4. Technical Expertise (Radar + Bars)
-
-**Layout:** Split (50/50)
-
-**Left Side:**
-```
-[Radar/Spider Chart]
-Displaying 5 main areas:
-- Cloud Platforms (95%)
-- Container Orchestration (90%)
-- Infrastructure as Code (95%)
-- CI/CD Automation (90%)
-- Monitoring & Security (85%)
-```
-
-**Right Side:**
-```
-[Skill Bars with Icons]
-
-☁️  Google Cloud Platform    [████████████████░] 95%
-☁️  Amazon Web Services       [████████████████░] 85%
-🐳  Kubernetes                [█████████████████░] 90%
-📦  Docker                    [█████████████████░] 90%
-🔧  Terraform                 [████████████████░] 95%
-🔄  Jenkins                   [████████████████░] 90%
-🔐  Vault / Teleport          [███████████████░] 85%
-```
-
-**Animation:**
-- Bars fill on scroll
-- Radar chart draws progressively
-- Percentage counters animate
-
----
-
-### 5. Featured Projects (Carousel + Cards)
-
-**Layout:** 3-column card grid with "Load More" or carousel
-
-**Card Design:**
-```
-┌──────────────────────────────┐
-│  [Project Icon/Image]        │
-│                              │
-│  SPSE Cloud Migration        │
-│  ─────────────────────       │
-│  600+ services migrated to   │
-│  government-certified cloud  │
-│                              │
-│  Impact:                     │
-│  • Enhanced Security         │
-│  • Improved Reliability      │
-│  • 100% IaC Automation       │
-│                              │
-│  [View Details →]            │
-└──────────────────────────────┘
-```
-
-**Projects to Feature:**
-1. SPSE Cloud Migration (600+ services)
-2. Infrastructure Cost Optimization (90%+)
-3. Teleport Access Control
-4. Vault Secret Management
-5. Jenkins Shared Library
-6. Open Source CV Builder
-
-**Styling:**
-- Image/icon at top
-- Glass card with gradient border
-- Tag pills for technologies
-- Hover: Lift effect + border glow
-
----
-
-### 6. GitHub Portfolio Section
-
-**Layout:** Stats + Repository Grid
-
-**GitHub Stats Widget:**
-```
-┌─────────────────────────────────────┐
-│  GitHub Activity                    │
-│  ────────────────────────────       │
-│                                     │
-│  📊 18 Repositories                 │
-│  ⭐ 13 Stars                        │
-│  🍴 22 Forks                        │
-│                                     │
-│  Top Languages:                     │
-│  █ Shell      17%                   │
-│  █ Dockerfile 11%                   │
-│  █ JavaScript  6%                   │
-│  █ Others     66%                   │
-└─────────────────────────────────────┘
-```
-
-**Featured Repos (Cards):**
-```
-┌─────────────────────┬─────────────────────┐
-│  📄 cv              │  ☸️ sonarqube-k8s   │
-│  Markdown CV Builder│  SonarQube on K8s   │
-│  ⭐ 5 | 🍴 6        │  ⭐ 5 | 🍴 16       │
-│  CSS                │  YAML               │
-│  [View on GitHub →] │  [View on GitHub →] │
-└─────────────────────┴─────────────────────┘
-```
-
-**Visualization:**
-- Live GitHub stats API integration
-- Language donut chart
-- Contribution heatmap (optional)
-- Repository cards with hover effect
-
----
-
-### 7. Testimonials (Carousel)
-
-**Layout:** Full-width carousel with quotes
-
-**Design:**
-```
-┌────────────────────────────────────────────────────────┐
-│                                                        │
-│  "If I had to describe David in one word, it would   │
-│   be 'unflappable'... His technical craft is second  │
-│   to none. He was a cornerstone of the team that     │
-│   achieved a staggering 90%+ reduction..."           │
-│                                                        │
-│   [GovTech Logo]  Felix Jingga                        │
-│   Procurement     Chief Technology Officer            │
-│                                                        │
-│                   [● ○ ○ ]  ← Carousel indicators    │
-└────────────────────────────────────────────────────────┘
-```
-
-**Features:**
-- Large quote typography
-- GovTech Procurement logo (company branding)
-- Auto-rotate every 8 seconds
-- Swipe on mobile
-- 2-3 featured testimonials
-
-**Note:** Both testimonials (Felix Jingga and Andreas Cendranata) are from GovTech Procurement, so company logo is used instead of individual photos for professional, unified presentation.
-
----
-
-### 8. Certifications Badge Wall
-
-**Layout:** Grid of certification badges
-
-```
-┌───────┬───────┬───────┬───────┐
-│  GCP  │  AWS  │ Agile │DevOps │
-│ Assoc.│DevOps │ Found.│ Essen.│
-│ Cloud │  Eng. │       │       │
-│  Eng. │       │       │       │
-└───────┴───────┴───────┴───────┘
-┌───────┬───────┬───────┬───────┐
-│  GCP  │ AWS   │Tokopedia│ MIE │
-│ Fund. │ Dev.  │  Way   │Cert. │
-└───────┴───────┴───────┴───────┘
-```
-
-**Styling:**
-- Badge/shield design
-- Organization logos
-- Clickable (link to credentials)
-- Hover: Tooltip with details
-
----
-
-### 9. Career Visualization (Sankey/Flow Diagram)
-
-**Type:** Interactive flow diagram
-
-**Concept:**
-```
-Technologies              Roles              Companies
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Linux/Datacenter ─────→ Data Center Staff ──→ BINUS IT
-                                               ↓
-Kubernetes ──────┐                            
-CI/CD  ──────────┼────→ Release Engineer ───→ Pegipegi
-Docker ──────────┘                              ↓
-                                               
-GCP/AWS ─────────┐                             
-Terraform ───────┼────→ DevOps Engineer ────→ GoTo Group
-Vault ───────────┘                              ↓
-                                               
-GKE/IaC ─────────┐                             
-Teleport ────────┼────→ Infra Engineer ─────→ GovTech
-Cloud Run ───────┘                              ↓
-                                               
-Jenkins/Harbor ──┼────→ CI/CD Platform ─────→ Rakuten
-```
-
-**Alternative:** Timeline with technology tags
-
----
-
-### 10. Contact Section (Simple CTA)
-
-**Design:**
-```
-┌────────────────────────────────────────┐
-│                                        │
-│         Let's Build Something          │
-│         Amazing Together               │
-│                                        │
-│  Interested in infrastructure          │
-│  modernization or cloud optimization?  │
-│                                        │
-│  ┌──────────────────────┐              │
-│  │ 📧 Email              │              │
-│  ├──────────────────────┤              │
-│  │ 💼 LinkedIn           │              │
-│  ├──────────────────────┤              │
-│  │ 💻 GitHub             │              │
-│  ├──────────────────────┤              │
-│  │ ✍️  Medium (pending)  │              │
-│  └──────────────────────┘              │
-└────────────────────────────────────────┘
-```
-
-**Styling:**
-- Dark section with gradient
-- Icon buttons with hover glow
-- Simple, not overwhelming
-- Optional: Contact form
-
----
-
-## 📊 Data Visualization Libraries
-
-### Recommended Stack
-```javascript
-// Charts & Graphs
-- Chart.js (simple, lightweight)
-- D3.js (advanced, custom)
-- ApexCharts (modern, interactive)
-
-// Animations
-- GSAP (smooth scrolling, counters)
-- AOS (animate on scroll)
-- Lottie (JSON animations)
-
-// Icons
-- Lucide Icons / Heroicons (SVG)
-- Custom tech stack icons
-
-// UI Framework
-- Vanilla CSS (recommended)
-- TailwindCSS (if requested)
-```
-
----
-
-## 🎭 Animation Strategy
-
-### On Page Load
-- Hero text: Fade in + slide up
-- Stats cards: Stagger animation (0.1s delay each)
-- Background: Subtle particle effect
-
-### On Scroll
-- Sections: Fade in when 30% visible
-- Charts: Draw/fill when visible
-- Counters: Animate from 0 to target value
-
-### Hover Effects
-- Cards: Lift (translateY -5px)
-- Buttons: Glow + scale
-- Links: Underline slide
-- Project cards: Border glow
-
-### Transitions
-- Smooth scrolling between sections
-- Page transitions: Minimal, fast (200-300ms)
-- Charts: Progressive rendering (500-1000ms)
-
----
-
-## 📱 Responsive Breakpoints
-
-```css
-/* Mobile First */
---mobile: 320px - 640px
---tablet: 641px - 1024px
---desktop: 1025px - 1440px
---wide: 1441px+
-
-/* Grid Adjustments */
-Mobile:  1 column, vertical timeline
-Tablet:  2 columns, compact cards
-Desktop: 3 columns, full features
-Wide:    3 columns, max-width container
-```
-
----
-
-## 🔤 Typography
-
-### Font Stack
+### Typography Scale
 ```css
 /* Headings */
-font-family: 'Inter', 'Outfit', sans-serif
-font-weight: 700-900 (Bold to Black)
+h1: var(--text-display-size)    /* 48-72px responsive */
+h2: var(--text-title-size-large) /* 32-48px responsive */
+h3: var(--text-title-size-medium)
 
 /* Body */
-font-family: 'Inter', system-ui, sans-serif
-font-weight: 400-500 (Regular to Medium)
-
-/* Code/Tech */
-font-family: 'JetBrains Mono', 'Fira Code', monospace
+body: var(--text-body-size-large) /* 16-18px */
+small: var(--text-body-size-small) /* 14px */
 ```
 
-### Hierarchy
-```
-H1: 3.5rem (56px) - Hero headline
-H2: 2.5rem (40px) - Section titles
-H3: 1.75rem (28px) - Card titles
-H4: 1.25rem (20px) - Subsections
-Body: 1rem (16px) - Paragraph text
-Small: 0.875rem (14px) - Captions, labels
+### Spacing
+```css
+/* Container */
+padding: var(--base-size-16) to var(--base-size-80)
+
+/* Section gaps */
+gap: var(--stack-gap-normal) /* 16-24px */
+
+/* Card padding */
+padding: var(--base-size-24)
 ```
 
 ---
 
-## 🎯 Performance Optimization
+## 📐 Responsive Breakpoints
 
-### Critical
-- ✅ Lazy load images below fold
-- ✅ Defer chart rendering until visible
-- ✅ Optimize SVG icons
-- ✅ Minimize CSS/JS bundle
-- ✅ Use modern image formats (WebP)
-
-### Progressive Enhancement
-- ✅ Static content loads first
-- ✅ Animations added progressively
-- ✅ Charts render after content
-- ✅ Fallbacks for no-JS (rare but considerate)
+| Breakpoint | Width | Layout Changes |
+|------------|-------|----------------|
+| Mobile | < 640px | Single column, stacked cards |
+| Tablet | 640-1024px | 2 columns for stats |
+| Desktop | > 1024px | Full layout, 3 columns |
 
 ---
 
-## 📋 Component Priority List
+## 🎬 Animation Strategy
 
-### Phase 1: Core Content
-1. Hero section with stats
-2. Career timeline
-3. Impact dashboard
-4. Featured projects (top 6)
+### Entry Animations
+- **Hero:** Fade in from left, staggered elements
+- **Stats:** Scale up with delay per card
+- **Articles:** Fade in, slide up on scroll
+- **Timeline:** Reveal on scroll
 
-### Phase 2: Enhanced Content
-5. Technical expertise visualization
-6. GitHub portfolio section
-7. Testimonials carousel
+### Interaction Animations
+- **Cards:** Lift on hover (translateY -4px)
+- **Buttons:** Scale 1.05 on hover
+- **Progress bars:** Fill animation on view
 
-### Phase 3: Polish
-8. Certifications wall
-9. Career flow diagram
-10. Contact section
+### Performance
+- Use `transform` and `opacity` only
+- Respect `prefers-reduced-motion`
+- Lazy load off-screen animations
 
 ---
 
-## 🚀 Technical Implementation Plan
+## 📱 Page Flow
 
-### File Structure
 ```
-landing-page/
-├── index.html
-├── css/
-│   ├── main.css
-│   ├── components/
-│   │   ├── hero.css
-│   │   ├── timeline.css
-│   │   ├── dashboard.css
-│   │   └── cards.css
-├── js/
-│   ├── main.js
-│   ├── animations.js
-│   ├── charts.js
-│   └── data.js (content from content-data-source.md)
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-└── data/
-    └── content.json (generated from .md)
+┌─────────────────┐
+│     HERO        │
+│  (Full screen)  │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│    DASHBOARD    │
+│ (System status) │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│    ARTICLES     │  ← NEW
+│  (3 latest)     │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│    TIMELINE     │
+│  (Career path)  │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│  TESTIMONIALS   │
+│   (Carousel)    │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│     FOOTER      │
+└─────────────────┘
 ```
 
-### Data Integration
-- Convert `content-data-source.md` to JSON
-- Separate data from presentation
-- Easy updates without touching code
-
 ---
 
-## ✨ Unique Selling Points
+## ✅ Implementation Priority
 
-### What Makes This Special:
-1. **Data-Driven**: Every claim backed by metrics
-2. **Interactive**: Charts, timelines, hover effects
-3. **Professional**: Enterprise-grade design quality
-4. **Personal**: Authentic testimonials and story
-5. **Technical**: Showcases infrastructure expertise through design
-6. **Modern**: Latest CSS features (glassmorphism, gradients)
-
-### Wow Factor Elements:
-- Animated statistics counters
-- Interactive timeline exploration
-- Radar chart for skills
-- GitHub live integration
-- Smooth scroll animations
-- Glass morphism cards
-- Gradient accents
-- Dark mode optimized
-
----
-
-*End of Visual Planning Document*
+1. **Phase 1:** Stats Dashboard Refactor (monitoring style)
+2. **Phase 2:** Articles Section (new component)
+3. **Phase 3:** Hero Messaging Update
+4. **Phase 4:** Minor refinements and testing

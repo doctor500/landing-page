@@ -88,3 +88,48 @@ export const contactLinks: ContactLink[] = linksData.contact.map(link => ({
     description: link.description,
     type: link.type as 'link' | 'mailto'
 }))
+
+// ============================================
+// Medium Articles
+// ============================================
+
+import mediumData from '@/content/medium-sync.json'
+
+export interface MediumArticle {
+    title: string
+    url: string
+    publishedDate: string
+    readingTime: string
+    claps: number
+    responses: number
+    preview: string
+}
+
+export interface MediumProfile {
+    profileUrl: string
+    author: {
+        name: string
+        username: string
+        bio: string
+        followers: number
+    }
+    articles: MediumArticle[]
+    stats: {
+        totalArticles: number
+        totalClaps: number
+    }
+}
+
+/** Medium profile and articles data */
+export const medium: MediumProfile = mediumData
+
+/** Get latest N articles, filtered for English content */
+export function getLatestArticles(count: number = 3): MediumArticle[] {
+    // Filter out non-English articles (Indonesian ones have specific patterns)
+    const englishArticles = medium.articles.filter(article =>
+        !article.title.includes('Pengalaman') &&
+        !article.title.includes('bersama')
+    )
+    return englishArticles.slice(0, count)
+}
+
