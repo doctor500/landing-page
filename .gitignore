@@ -50,7 +50,7 @@ docs/
 design-system/
 .gitmodules
 
-# Temporary sync files (on-demand data extraction)
-content/*-sync.json
-# But include medium-sync.json for production (needed by articles section)
-!content/medium-sync.json
+# Sync files - Privacy Policy:
+# - linkedin-sync.json: PRIVATE (contains personal info, keep gitignored)
+# - medium-sync.json: PUBLIC (article data, safe to commit)
+content/linkedin-sync.json

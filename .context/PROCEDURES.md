@@ -209,7 +209,7 @@ After running the sync procedure:
      - Education details
      - Projects showcase
 3. **Test locally:** Run `npm run dev` and verify changes appear correctly
-4. **Cleanup:** Delete or archive `linkedin-sync.json` after integration
+4. **Cleanup:** Delete `linkedin-sync.json` after integration (contains personal info)
 
 ### Troubleshooting
 
@@ -301,12 +301,14 @@ Write the structured data to `content/medium-sync.json`
 After running the sync procedure:
 
 1. **Review the sync file:** Open `content/medium-sync.json` and verify accuracy
-2. **Update active content:**
-   - Update `content/links.json` with latest article links
-   - Consider featuring top 3-5 articles in portfolio modal
-   - Update article count/stats in hero section if displayed
-3. **Test locally:** Run `npm run dev` and verify links work
-4. **Cleanup:** Delete or archive `medium-sync.json` after integration
+2. **Commit the file:** Medium sync is tracked in git (needed for articles section)
+   ```bash
+   git add content/medium-sync.json
+   git commit -m "chore: Update Medium articles sync"
+   ```
+3. **Test locally:** Run `npm run dev` and verify articles display correctly
+
+> **Note:** Unlike LinkedIn sync, Medium sync contains only public article data and is safe to commit.
 
 ### Troubleshooting
 
@@ -433,4 +435,4 @@ If you see "embedded git repository" warnings:
 
 ---
 
-*Last Updated: 2026-02-02*
+*Last Updated: 2026-02-09*

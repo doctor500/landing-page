@@ -22,9 +22,16 @@
 
 ### File Protection
 
+**Sync File Privacy Levels:**
+
+| File | Privacy | Reason | Git Status |
+|------|---------|--------|------------|
+| `linkedin-sync.json` | 🔒 PRIVATE | Personal info, credentials | Gitignored |
+| `medium-sync.json` | 🌐 PUBLIC | Published article data | Tracked |
+
 **Gitignore Coverage:**
-- Pattern: `content/*-sync.json`
-- Files protected: `linkedin-sync.json`, `medium-sync.json`
+- Pattern: `content/linkedin-sync.json` (gitignored)
+- Medium sync: Explicitly tracked for production build
 - Status: ✅ Properly configured
 
 **Important Notes:**
@@ -35,11 +42,16 @@
 
 ### Retention Policy
 
-**Best Practices:**
-- ✅ Delete sync files immediately after integration
+**LinkedIn Sync (Private):**
+- ✅ Delete sync file immediately after integration
 - ✅ If archiving, use encrypted storage (not cloud sync folders)
-- ✅ Never share sync files via email/Slack/messaging
-- ❌ Don't commit sync files to any repository
+- ✅ Never share via email/Slack/messaging
+- ❌ Never commit to repository
+
+**Medium Sync (Public):**
+- ✅ Safe to commit to repository (used by articles section)
+- ✅ Contains only published article metadata
+- ⚠️ Still review for any personal info in bio text
 
 ---
 
@@ -112,8 +124,9 @@ Use this checklist before integrating sync data into active content files:
 
 3. **Verify Gitignore:**
    ```bash
-   git check-ignore -v content/*-sync.json
-   # Should return: .gitignore:54:content/*-sync.json
+   git check-ignore -v content/linkedin-sync.json
+   # Should return: .gitignore:XX:content/linkedin-sync.json
+   # Note: medium-sync.json is intentionally tracked
    ```
 
 ---
@@ -198,4 +211,4 @@ Use this checklist before integrating sync data into active content files:
 
 ---
 
-*Last Updated: 2026-02-02*
+*Last Updated: 2026-02-09*
