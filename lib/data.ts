@@ -135,6 +135,18 @@ export const stats: Stat[] = [
         icon: 'shield'
     },
     {
+        value: '80%',
+        label: 'Doc Automation',
+        sublabel: 'Agentic AI pipeline',
+        icon: 'projects'
+    },
+    {
+        value: '12x',
+        label: 'Faster Response',
+        sublabel: 'Via Agentic AI workflow',
+        icon: 'rocket'
+    },
+    {
         value: '600+',
         label: 'Migrations',
         sublabel: 'Services to cloud',
@@ -144,18 +156,6 @@ export const stats: Stat[] = [
         value: '85%',
         label: 'Build Time',
         sublabel: 'Reduction achieved',
-        icon: 'rocket'
-    },
-    {
-        value: '80%',
-        label: 'Doc Automation',
-        sublabel: 'AI-powered creation',
-        icon: 'projects'
-    },
-    {
-        value: '12x',
-        label: 'Faster Response',
-        sublabel: '24h → 2h investigation',
         icon: 'rocket'
     }
 ]

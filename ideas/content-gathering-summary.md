@@ -54,10 +54,10 @@
 |--------|-------|---------------|--------|
 | Cost Reduction | 90%+ | Progress bar (90%) | KEEP |
 | System Uptime | 99.9% | Uptime indicator | KEEP |
-| Services Migrated | 600+ | Counter | KEEP |
-| Build Time Reduction | 85% | Progress bar | KEEP |
-| Doc Automation | 80% | Progress bar | **NEW** (replaces IaC) |
-| Faster Response | 12x | Multiplier badge | **NEW** (replaces Years) |
+| Doc Automation | 80% | Progress bar | Hero #3 — 'Agentic AI pipeline' |
+| Faster Response | 12x | Multiplier badge | Hero #4 — 'Via Agentic AI workflow' |
+| Services Migrated | 600+ | Counter | Dashboard only |
+| Build Time Reduction | 85% | Progress bar | Dashboard only |
 
 ### Technical Impact
 - **Cost Optimization:** 90%+ daily cost reduction, $150K monthly savings

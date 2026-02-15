@@ -56,19 +56,19 @@
 │  Real-time achievements from infrastructure engineering    │
 │                                                            │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────┐│
-│  │ COST SAVINGS    │  │ AVAILABILITY    │  │ MIGRATIONS  ││
+│  │ COST SAVINGS    │  │ AVAILABILITY    │  │DOC AUTOMATE ││
 │  │                 │  │                 │  │             ││
-│  │ ████████░░ 90%  │  │ ●●●●● 99.9%     │  │    600+     ││
-│  │                 │  │                 │  │   services  ││
-│  │ $2M+ annually   │  │ zero downtime   │  │   to cloud  ││
+│  │ ████████░░ 90%  │  │ ●●●●● 99.9%     │  │ ████ 80%    ││
+│  │                 │  │                 │  │  Agentic AI ││
+│  │ $2M+ annually   │  │ zero downtime   │  │   pipeline  ││
 │  └─────────────────┘  └─────────────────┘  └─────────────┘│
 │                                                            │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────┐│
-│  │ BUILD TIME      │  │ IAC ADOPTION    │  │ EXPERIENCE  ││
+│  │FASTER RESPONSE  │  │ MIGRATIONS      │  │ BUILD TIME  ││
 │  │                 │  │                 │  │             ││
-│  │ ████████░░ -85% │  │ ██████████ 100% │  │    6+ yrs   ││
-│  │                 │  │                 │  │  platform   ││
-│  │ CI/CD optimized │  │ Terraform       │  │  engineering││
+│  │      12x        │  │    600+         │  │ ████████ 85%││
+│  │  Via Agentic AI │  │   services      │  │             ││
+│  │   workflow      │  │   to cloud      │  │ CI/CD opt.  ││
 │  └─────────────────┘  └─────────────────┘  └─────────────┘│
 │                                                            │
 └────────────────────────────────────────────────────────────┘
