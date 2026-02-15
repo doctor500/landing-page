@@ -156,7 +156,7 @@ export const stats: Stat[] = [
         value: '12x',
         label: 'Faster Response',
         sublabel: '24h → 2h investigation',
-        icon: 'quote'
+        icon: 'rocket'
     }
 ]
 

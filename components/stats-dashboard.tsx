@@ -63,7 +63,7 @@ function getProgressValue(value: string): number | null {
 // Check if value should show as counter (large number) vs progress
 function isCounterValue(value: string): boolean {
     const num = parseInt(value.replace(/[^0-9]/g, ''))
-    return num > 100 || value.includes('600') || value.includes('7+')
+    return num > 100 || value.includes('600') || value.includes('x')
 }
 
 interface DashboardCardProps {
