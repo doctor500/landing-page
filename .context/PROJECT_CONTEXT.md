@@ -3,7 +3,7 @@
 **Project:** David Layardi Personal Landing Page  
 **Framework:** Next.js 14 + TypeScript  
 **Live Site:** [https://www.layardi.com](https://www.layardi.com)  
-**Last Updated:** 2026-02-09
+**Last Updated:** 2026-02-16
 
 ---
 

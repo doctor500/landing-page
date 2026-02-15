@@ -1,6 +1,6 @@
 /**
  * Content Data extracted from ideas/content-data-source.md
- * Last Updated: 2026-01-01
+ * Last Updated: 2026-02-16
  */
 
 export interface CareerPosition {
@@ -48,9 +48,14 @@ export const careerTimeline: CareerPosition[] = [
         location: 'Tokyo, Japan',
         period: 'Oct 2025 - Present',
         duration: '3 months',
-        description: 'CI/CD platform development and automation',
-        achievements: [],
-        technologies: ['Jenkins', 'Kubernetes', 'GitHub Actions']
+        description: 'CI/CD platform development and Agentic AI for infrastructure operations',
+        achievements: [
+            'Claude Code Plugin for compliance docs — 80% time reduction',
+            'AI-powered incident investigation — 24h to under 2h',
+            'CI/CD-as-a-Service platform on Kubernetes',
+            'Backend automation tooling in Go and Python'
+        ],
+        technologies: ['Jenkins', 'Kubernetes', 'GitHub Actions', 'Claude Code', 'Go', 'Python', 'Harbor']
     },
     {
         company: 'GovTech Procurement',
@@ -58,13 +63,13 @@ export const careerTimeline: CareerPosition[] = [
         location: 'Indonesia',
         period: 'Jan 2024 - Sep 2025',
         duration: '1 year 9 months',
-        description: 'Infrastructure automation and cloud migration',
+        description: 'Infrastructure automation and cloud migration for government systems',
         achievements: [
+            '90%+ daily cost reduction, $150K monthly savings via GKE migration',
             '600+ services migrated to government-certified cloud',
-            '100% infrastructure-as-code adoption',
-            'Zero security incidents',
-            'SPSE Multi-tenancy & Optimization',
-            'Teleport Access Control implementation'
+            'Mail Services to Kubernetes — 6x scaling performance',
+            'Audited access control for 500+ resources via Teleport',
+            'Zero security incidents throughout tenure'
         ],
         technologies: ['GCP', 'Kubernetes', 'Terraform', 'Cloud Run', 'Pomerium', 'Teleport']
     },
@@ -74,14 +79,15 @@ export const careerTimeline: CareerPosition[] = [
         location: 'Jakarta, Indonesia',
         period: 'Nov 2021 - Dec 2023',
         duration: '2 years 2 months',
-        description: 'DevOps automation and cost optimization',
+        description: 'DevOps automation and cost optimization for Southeast Asia\'s largest tech company',
         achievements: [
-            '90%+ infrastructure cost reduction',
-            '99.9% availability maintained',
-            'GKE Spot Instances with multi-zone HA',
+            'Up to 50% hourly AWS infrastructure cost reduction',
+            '99.9% availability maintained during optimization',
+            'Cloud SQL Migration optimized from 2h to 15min (GCP DMS)',
+            'GKE Spot Instances with multi-zone high availability',
             'Vault Cluster implementation for Selly.id'
         ],
-        technologies: ['GCP', 'GKE', 'Kubernetes', 'Vault', 'Terraform']
+        technologies: ['GCP', 'GKE', 'Kubernetes', 'Vault', 'Terraform', 'AWS']
     },
     {
         company: 'Pegipegi',
@@ -89,12 +95,12 @@ export const careerTimeline: CareerPosition[] = [
         location: 'Jakarta, Indonesia',
         period: 'Mar 2020 - Oct 2021',
         duration: '1 year 8 months',
-        description: 'CI/CD pipeline standardization',
+        description: 'CI/CD pipeline standardization and automation',
         achievements: [
-            'Jenkins Shared Library implementation',
-            'Standardized build/release processes',
-            'Phabricator repository management',
-            'Container-based CI/CD environment'
+            'Jenkins pipelines standardized — 80%+ redundant file reduction',
+            'Provisioning time decreased 6x using Kubernetes',
+            'Container-based CI/CD environment',
+            '85% build time reduction'
         ],
         technologies: ['Jenkins', 'Kubernetes', 'Groovy', 'Docker', 'Phabricator']
     },
@@ -141,15 +147,15 @@ export const stats: Stat[] = [
         icon: 'rocket'
     },
     {
-        value: '100%',
-        label: 'IaC Adoption',
-        sublabel: 'Terraform managed',
+        value: '80%',
+        label: 'Doc Automation',
+        sublabel: 'AI-powered creation',
         icon: 'projects'
     },
     {
-        value: '7+',
-        label: 'Years',
-        sublabel: 'Platform engineering',
+        value: '12x',
+        label: 'Faster Response',
+        sublabel: '24h → 2h investigation',
         icon: 'quote'
     }
 ]
@@ -205,6 +211,11 @@ export const technicalSkills = {
         { name: 'Vault', level: 85, category: 'Security' },
         { name: 'Teleport', level: 85, category: 'Security' },
         { name: 'Pomerium', level: 80, category: 'Security' }
+    ],
+    agenticAI: [
+        { name: 'Claude Code', level: 85, category: 'AI' },
+        { name: 'AI Agent Development', level: 80, category: 'AI' },
+        { name: 'MCP (Model Context Protocol)', level: 80, category: 'AI' }
     ]
 }
 
@@ -282,6 +293,18 @@ export const featuredProjects: Project[] = [
         ],
         technologies: ['Jekyll', 'GitHub Actions', 'Markdown'],
         link: 'https://github.com/doctor500/cv'
+    },
+    {
+        name: 'Compliance Document Automation',
+        description: 'Claude Code Plugin for auto-generating compliance-ready operation documents at Rakuten',
+        period: '2025',
+        impact: [
+            '80% Time Reduction',
+            'AI-Powered Generation',
+            'Compliance-Ready Output',
+            'Agentic Workflow Design'
+        ],
+        technologies: ['Claude Code', 'AI Agent', 'MCP']
     }
 ]
 

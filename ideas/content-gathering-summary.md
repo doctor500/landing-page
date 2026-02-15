@@ -1,7 +1,7 @@
 # Content Gathering Summary
 
 > **Summary of data collection and integration strategy**  
-> Last Updated: 2026-02-09
+> Last Updated: 2026-02-16
 
 ---
 
@@ -43,27 +43,28 @@
 ## 📊 Key Statistics Summary
 
 ### Career Highlights
-- **Total Experience:** 6+ years (Infrastructure/DevOps)
+- **Total Experience:** ~8 years (Infrastructure/DevOps/AI)
 - **Companies:** 5 (BINUS Data Center → Pegipegi → GoTo → GovTech → Rakuten)
 - **Current Role:** Software Engineer - CI/CD Platform @ Rakuten, Tokyo
 - **Focus:** 100% Infrastructure & Automation Engineering
 
 ### Impact Metrics (Dashboard Ready)
 
-| Metric | Value | Visualization |
-|--------|-------|---------------|
-| Cost Reduction | 90%+ | Progress bar (90%) |
-| System Uptime | 99.9% | Uptime indicator |
-| Services Migrated | 600+ | Counter |
-| Build Time Reduction | 85% | Progress bar |
-| IaC Adoption | 100% | Complete indicator |
-| Experience | 6+ years | Duration counter |
+| Metric | Value | Visualization | Status |
+|--------|-------|---------------|--------|
+| Cost Reduction | 90%+ | Progress bar (90%) | KEEP |
+| System Uptime | 99.9% | Uptime indicator | KEEP |
+| Services Migrated | 600+ | Counter | KEEP |
+| Build Time Reduction | 85% | Progress bar | KEEP |
+| Doc Automation | 80% | Progress bar | **NEW** (replaces IaC) |
+| Faster Response | 12x | Multiplier badge | **NEW** (replaces Years) |
 
 ### Technical Impact
-- **Cost Optimization:** 90%+ monthly infrastructure cost reduction
-- **Scale:** 600+ services migrated to cloud
+- **Cost Optimization:** 90%+ daily cost reduction, $150K monthly savings
+- **Scale:** 600+ services migrated, 500+ resources secured
 - **Reliability:** 99.9% availability maintained
-- **Automation:** 100% IaC adoption with Terraform
+- **AI Automation:** 80% doc creation time reduction via Claude Code Plugin
+- **Incident Response:** 24h → 2h investigation via AI-powered analysis
 - **Security:** Zero incidents during government cloud migration
 
 ---
@@ -102,24 +103,25 @@
 
 ## 🎯 Brand Positioning
 
-### Current State
-```
-Infrastructure & Platform Engineer
-"Building scalable, reliable systems"
-```
-
-### Target State
+### Previous State
 ```
 Infrastructure & Automation Engineer
 "Building AI-Ready Infrastructure • Context Engineering Enthusiast"
 ```
 
+### Current State (Updated)
+```
+Infrastructure & AI Engineer
+"Cloud-Native Automation with AI-Powered Operations"
+```
+
 ### Messaging Guidelines
+- ✅ AI is now part of official title — backed by real achievements
+- ✅ Reference Claude Code plugin and AI-powered tooling
 - ✅ Emphasize infrastructure expertise as AI foundation
-- ✅ Reference context engineering and automation
 - ✅ Highlight cloud-native and Kubernetes experience
-- ❌ Don't explicitly claim "AI Engineer" title yet
-- ❌ Don't overstate AI experience
+- ✅ Showcase Agentic AI for infrastructure operations
+- ❌ Don't overstate AI research/ML experience (focus is on applied AI for ops)
 
 ---
 
@@ -150,7 +152,9 @@ lib/
 1. [x] LinkedIn data extraction complete
 2. [x] GitHub data extraction complete
 3. [x] Medium data extraction complete
-4. [ ] Refactor stats dashboard to monitoring style
-5. [ ] Add articles section component
-6. [ ] Update hero messaging
-7. [ ] E2E verification
+4. [x] Refactor stats dashboard to monitoring style
+5. [x] Add articles section component
+6. [/] Update hero messaging (new title & tagline)
+7. [/] Replace stats cards (IaC + Years → AI metrics)
+8. [/] Update career achievements with specific metrics
+9. [ ] E2E verification

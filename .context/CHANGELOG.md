@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.4.0] - 2026-02-16
+
+### Changed
+- **Hero Branding** — New AI-focused identity
+  - Role: "Infrastructure & AI Engineer"
+  - Tagline: "Cloud-Native Automation with AI-Powered Operations"
+  - Updated heroBio and bio with Agentic AI achievements
+- **Stats Dashboard** — Replaced 2 cards for AI integration
+  - Removed: IaC Adoption (100%), Years (7+)
+  - Added: Doc Automation (80%), Faster Response (12x)
+- **Career Timeline** — Updated all roles with specific metrics from latest CV
+  - Rakuten: 4 new achievements (Claude Code plugin, AI incident investigation)
+  - GovTech: $150K/mo savings, 6x Mail scaling, 500+ Teleport resources
+  - GoTo: 50% hourly AWS cost, Cloud SQL 2h→15min
+  - Pegipegi: 80%+ file reduction, 6x provisioning speed
+- **Career Subtitle** — "From Data Centers to AI-Powered Cloud Operations"
+
+### Added
+- **AI Skills** — New `agenticAI` category in technical skills (Claude Code, AI Agent Dev, MCP)
+- **New Project** — Compliance Document Automation Plugin (Claude Code)
+- **Ideas Updates** — All 3 ideas files updated with latest CV data and brand positioning
+
 ## [1.3.0] - 2026-02-09
 
 ### Added

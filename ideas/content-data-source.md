@@ -2,7 +2,7 @@
 
 > **Data Source Document**  
 > Contains extracted and analyzed data from LinkedIn, GitHub, Medium, and other sources.  
-> Last Updated: 2026-02-09
+> Last Updated: 2026-02-16
 
 ---
 
@@ -10,8 +10,8 @@
 
 **Name:** David Layardi  
 **Current Role:** Software Engineer - CI/CD Platform @ Rakuten, Tokyo  
-**Focus Area:** Infrastructure & Automation Engineering  
-**Brand Position:** Building AI-Ready Infrastructure • Context Engineering Enthusiast
+**Focus Area:** Infrastructure & AI Engineering  
+**Brand Position:** Infrastructure & AI Engineer • Cloud-Native Automation with AI-Powered Operations
 
 **Total Experience:** 6+ years in Infrastructure, DevOps & Platform Engineering  
 **Industries:** E-commerce, Government Tech, Fintech, Travel Tech
@@ -41,16 +41,17 @@
 ### Cost Optimization
 | Metric | Value | Context |
 |--------|-------|---------|
-| Cost Reduction | 90%+ | Monthly infrastructure spend at GoTo Group |
-| Annual Savings | $2M+ | Estimated through GKE Spot optimization |
-| Resource Efficiency | 6x | Compute utilization improvement |
+| Cost Reduction | 90%+ | Daily production costs at GovTech |
+| Monthly Savings | $150K+ | Via GKE migration at GovTech |
+| AWS Cost Reduction | 50% hourly | Infrastructure spend at GoTo Group |
+| Resource Efficiency | 6x | Mail Services scaling via Kubernetes |
 
 ### Migration & Scale
 | Metric | Value | Context |
 |--------|-------|---------|
 | Services Migrated | 600+ | Bare metal to government cloud |
+| Cloud Resources | 500+ | Secured with Teleport access control |
 | Zero Downtime | 100% | Migration success rate |
-| IaC Adoption | 100% | Full infrastructure automation |
 
 ### Reliability & Performance
 | Metric | Value | Context |
@@ -58,13 +59,15 @@
 | System Uptime | 99.9% | Maintained during optimization |
 | Security Incidents | 0 | Zero breaches during tenure |
 | Build Time Reduction | 85% | Pipeline optimization |
+| Cloud SQL Migration | 2h → 15min | Optimized via GCP DMS |
 
-### Automation Impact
+### AI & Automation Impact
 | Metric | Value | Context |
 |--------|-------|---------|
-| Provisioning Speed | 6x faster | Terraform-managed infra |
-| Pipeline Standardization | 100+ jobs | Jenkins shared library |
-| Manual Intervention | -90% | Automated workflows |
+| Doc Automation | 80% | Time reduction via Claude Code Plugin |
+| Incident Investigation | 12x faster | 24h → 2h via AI-powered analysis |
+| Pipeline Standardization | 80%+ | Redundant file reduction |
+| Provisioning Speed | 6x faster | Kubernetes-based provisioning |
 
 ---
 
@@ -74,14 +77,15 @@
 **Rakuten** | Tokyo, Japan  
 *Oct 2025 - Present (dynamically calculated)*
 
-**Focus:** CI/CD platform development and infrastructure automation for global e-commerce
+**Focus:** CI/CD platform development, Agentic AI for infrastructure operations
 
-**Key Responsibilities:**
-- Platform engineering for CI/CD systems
-- Infrastructure automation and optimization
-- Developer experience improvements
+**Key Achievements:**
+- Claude Code Plugin for compliance docs — 80% creation time reduction
+- AI-powered cyber incident investigation — 24h to under 2h
+- CI/CD-as-a-Service platform on Kubernetes
+- Backend automation tooling in Go and Python
 
-**Technologies:** Jenkins, Kubernetes, GitHub Actions, Harbor
+**Technologies:** Jenkins, Kubernetes, GitHub Actions, Harbor, Claude Code, Go, Python
 
 ---
 
@@ -92,16 +96,16 @@
 **Focus:** Leading cloud migration and infrastructure modernization for government systems
 
 **Key Achievements:**
+- 90%+ daily cost reduction, $150K monthly savings via GKE migration
 - 600+ services migrated to government-certified cloud
-- 100% IaC adoption with Terraform
+- Mail Services to Kubernetes — 6x scaling performance
+- Audited access control for 500+ resources via Teleport
 - Zero security incidents throughout tenure
-- SPSE Multi-tenancy & Optimization
-- Teleport Access Control implementation
 
 **Impact Metrics:**
-- Scale: 600+ services
-- Security: 0 incidents
-- Automation: 100% IaC
+- Cost: 90%+ daily reduction, $150K/mo savings
+- Scale: 600+ services migrated
+- Security: 0 incidents, 500+ resources secured
 
 **Technologies:** GCP, Kubernetes, Terraform, Cloud Run, Pomerium, Teleport
 
@@ -114,17 +118,18 @@
 **Focus:** Infrastructure cost optimization and DevOps automation for Southeast Asia's largest tech company
 
 **Key Achievements:**
-- 90%+ monthly infrastructure cost reduction
+- Up to 50% hourly AWS infrastructure cost reduction
 - 99.9% availability maintained during optimization
+- Cloud SQL Migration optimized from 2h to 15min (GCP DMS)
 - GKE Spot Instances with multi-zone high availability
-- Vault Cluster implementation for secure secret management
+- Vault Cluster implementation for Selly.id
 
 **Impact Metrics:**
-- Cost: 90%+ reduction
+- Cost: 50% hourly AWS reduction
 - Uptime: 99.9%
-- Value: $2M+ annual savings
+- DB Migration: 2h → 15min
 
-**Technologies:** GCP, GKE, Kubernetes, Vault, Terraform
+**Technologies:** GCP, GKE, Kubernetes, Vault, Terraform, AWS
 
 ---
 
@@ -135,8 +140,8 @@
 **Focus:** CI/CD standardization and pipeline automation for travel tech platform
 
 **Key Achievements:**
-- Jenkins Shared Library implementation
-- Standardized build/release processes across teams
+- Jenkins pipelines standardized — 80%+ redundant file reduction
+- Provisioning time decreased 6x using Kubernetes
 - Container-based CI/CD environment
 - 85% build time reduction
 
@@ -172,6 +177,8 @@
 |------------|-------------|------------|
 | Kubernetes | Expert (90%) | 4+ years |
 | Docker | Expert (90%) | 5+ years |
+| Helm / Kustomize | Advanced (85%) | 3+ years |
+| Harbor / JFrog | Advanced (80%) | 2+ years |
 
 ### Infrastructure as Code
 | Tool | Proficiency | Experience |
@@ -185,6 +192,24 @@
 | Jenkins | Expert (90%) | 5+ years |
 | GitHub Actions | Advanced (85%) | 2+ years |
 | GitLab CI | Advanced (80%) | 2+ years |
+| ArgoCD | Advanced (80%) | 2+ years |
+
+### AI & Agentic Tools
+| Tool | Proficiency | Experience |
+|------|-------------|------------|
+| Claude Code | Advanced (85%) | Active |
+| AI Agent Development | Advanced (80%) | Active |
+| MCP (Model Context Protocol) | Advanced (80%) | Active |
+| Agentic Workflow Design | Advanced (80%) | Active |
+| Prompt Engineering | Advanced (80%) | Active |
+
+### Languages & Scripting
+| Language | Proficiency | Experience |
+|----------|-------------|------------|
+| Python | Advanced (85%) | 3+ years |
+| Go | Advanced (80%) | 1+ years |
+| Java (Groovy) | Advanced (80%) | 3+ years |
+| Shell/Bash | Expert (90%) | 5+ years |
 
 ### Security & Access
 | Tool | Proficiency | Experience |
@@ -256,6 +281,15 @@
 > "His expertise in Google Cloud Platform was a tremendous asset, particularly when he led our complex migration from Cloud Run to GKE. David proactively optimized our costs by implementing GKE on Spot Instances with multi-zone HA."
 
 ---
+
+## 🚀 Latest Professional Projects
+
+| Project | Company | Key Impact |
+|---------|---------|------------|
+| Compliance Document Automation Plugin (Claude Code) | Rakuten | 80% creation time reduction |
+| Open Source CV with AI-Powered Evaluation Framework | Personal | AI-governed scoring pipelines |
+| SPSE Migration to Government Cloud | GovTech | 600+ services migrated |
+| Config & Secret Management (Vault) | GoTo (Selly.id) | Kubernetes-native secrets |
 
 ## 🔗 Data Sources
 
