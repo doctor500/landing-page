@@ -120,8 +120,8 @@ landing-page/
 - `FloatingNav` - Bottom-Center navigation
 
 ### Section Components
-- `HeroSection` - Name, role, tagline, stats counters, CTA buttons with modal triggers
-- `StatsDashboard` - System monitoring style with progress bars and status indicators
+- `HeroSection` - Name, role, tagline, key AI & Infra metrics, CTA buttons
+- `StatsDashboard` - System monitoring style (Agentic AI pipeline, Response times)
 - `ArticlesSection` - Latest 3 Medium articles with View More button
 - `CareerTimeline` - Expandable career history with dynamic duration
 - `Testimonials` - Auto-rotating carousel with progress bar

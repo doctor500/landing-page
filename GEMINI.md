@@ -34,7 +34,7 @@ npm run build
 
 **Framework:** Next.js 14 + TypeScript  
 **Design:** Dark/light mode with design system tokens  
-**Components:** 6 main components (Hero, Timeline, Stats, Testimonials, Nav, Theme Toggle)
+**Components:** Hero (AI Metrics), Timeline, Stats (Agentic Workflows), Articles, Nav, Theme Toggle
 
 ---
 
@@ -83,4 +83,4 @@ Examples:
 
 **Complete info in:** `.context/PROJECT_CONTEXT.md`
 
-*Last Updated: 2026-01-02*
+*Last Updated: 2026-02-16*
