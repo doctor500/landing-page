@@ -2,7 +2,7 @@
 
 > **Status: ACTIVE**  
 > **Current Mode: Approval Mode (Default)**  
-> **Last Updated: 2026-02-02**
+> **Last Updated: 2026-02-22**
 
 This document establishes protocols for AI Agent interaction with this repository. All AI agents operating on this project **MUST** read and follow these rules.
 
@@ -11,6 +11,21 @@ This document establishes protocols for AI Agent interaction with this repositor
 ## Core Principle
 
 **Safety over Speed** — When in doubt, ask for approval.
+
+---
+
+## Mandatory Reading
+
+Before performing ANY work on this repository, AI agents **MUST** read and follow these documents in order:
+
+1. **This file** — `.context/GOVERNANCE.md` (protocols & approval rules)
+2. **Project Context** — `.context/PROJECT_CONTEXT.md` (architecture, structure, guidelines)
+3. **Procedures** — `.context/PROCEDURES.md` (operational workflows)
+4. **Security** — `.context/SECURITY.md` (data privacy & sanitization rules)
+
+> [!CAUTION]
+> Skipping any of these documents is a governance violation.
+> If a procedure references SECURITY.md, the agent MUST read and follow it.
 
 ---
 
@@ -50,6 +65,23 @@ This document establishes protocols for AI Agent interaction with this repositor
 - Changes to build/deploy pipelines
 - Design system token updates
 - Content structure changes
+- Content sync operations (LinkedIn, Medium, or any external source)
+
+### Content Sync Workflows
+
+Content sync operations involve browser automation and writing files that may contain personal data.
+
+**Approval Requirements:**
+- Starting a sync procedure → **Requires approval** (confirm which source and scope)
+- Writing sync output files (`*-sync.json`) → Auto-execute (governed by PROCEDURES.md)
+- Integrating sync data into active content → **Requires approval** (review sanitized data first)
+
+**Mandatory Steps:**
+1. Read `PROCEDURES.md` for the specific sync procedure before starting
+2. Read `SECURITY.md` before handling any extracted data
+3. Follow the Data Sanitization Checklist (SECURITY.md) before integration
+4. Verify no sensitive data leaks into committed content files
+5. Confirm sync file retention policy is followed (delete private sync files after use)
 
 ### Exceptions (Safe to Auto-Execute)
 
@@ -133,17 +165,68 @@ By operating on this repository, you acknowledge:
    - Type definitions in `lib/content.ts` must stay in sync
    - Avoid duplicating URLs between `personal.json` and `links.json`
 
+### Security & Data Privacy
+
+**Mandatory:** All agents MUST read `.context/SECURITY.md` before any of the following activities:
+- Content sync procedures (LinkedIn, Medium, or any external source)
+- Modifying files in `content/` directory
+- Handling any personally identifiable information (PII)
+- Reviewing or integrating data extracted from external sources
+
+**Before Every Commit, agents MUST verify:**
+
+- [ ] No private sync files are staged (`git status` check)
+- [ ] No credential IDs, private emails, or API keys in changed files
+- [ ] No authentication tokens embedded in URLs
+- [ ] Gitignore rules are intact for private files
+- [ ] Data sanitization checklist (SECURITY.md) was followed if content was updated
+
+> [!WARNING]
+> If an agent detects potential data leakage at any point, it MUST:
+> 1. **STOP** execution immediately
+> 2. Alert the user with specifics of the potential leak
+> 3. Do NOT commit or push until the user confirms it is safe
+
+**Incident Awareness:**
+- Agents should be aware of incident response procedures in SECURITY.md
+- If a private sync file is accidentally staged, follow SECURITY.md § Incident Response
+
+### Changelog Updates
+
+After completing any feature, fix, or significant change:
+
+1. **Update `.context/CHANGELOG.md`** with the change under the appropriate version
+2. Use the existing format: `## [version] - date` with categorized subsections (`Added`, `Changed`, `Fixed`, `Documentation`)
+3. If no version bump is warranted, add under the current version heading
+
+**What requires a changelog entry:**
+- New features or components
+- Bug fixes
+- Content or data structure changes
+- Documentation changes (procedural updates, governance changes)
+- Design system updates
+
+**What does NOT require a changelog entry:**
+- Read-only research or investigation
+- Plan documents or brain artifacts
+- Trivial formatting-only edits
+
 ---
 
 ## Pre-Flight Checks (Mandatory)
 
 Before making ANY changes, AI agents MUST verify:
 
+- [ ] I have read `.context/GOVERNANCE.md`
 - [ ] I have read `.context/PROJECT_CONTEXT.md`
+- [ ] I have read `.context/PROCEDURES.md`
+- [ ] I have read `.context/SECURITY.md`
 - [ ] I understand the current project state
 - [ ] I know which mode I'm operating in (Approval or Auto Pilot)
 - [ ] I have a clear plan for the requested changes
 - [ ] I know how to verify my changes
+- [ ] I will update `.context/CHANGELOG.md` after completing changes
+- [ ] I will run `git status` before committing to check for data leaks
 
 ---
 
@@ -200,6 +283,8 @@ If you believe these rules are preventing a reasonable action, you may:
 ## Related Documentation
 
 - **Project Overview:** `.context/PROJECT_CONTEXT.md`
+- **Procedures:** `.context/PROCEDURES.md`
+- **Security:** `.context/SECURITY.md`
 - **Version History:** `.context/CHANGELOG.md`
 - **Quick Reference:** `GEMINI.md` (root level)
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.1] - 2026-02-22
+
+### Documentation
+- **Governance Update** — Enhanced AI agent governance with new enforcement sections
+  - Added Mandatory Reading section (all 4 `.context/` docs required)
+  - Added Content Sync Workflow governance rules (approval requirements, mandatory steps)
+  - Added Security & Data Privacy enforcement (commit verification, stop-on-leak protocol)
+  - Added Changelog Update enforcement (what requires/doesn't require entries)
+  - Expanded Pre-Flight Checks (10 items, up from 5)
+  - Updated Related Documentation with full `.context/` references
+- **GEMINI.md** — Added `PROCEDURES.md` and `SECURITY.md` to mandatory reading list
+
 ## [1.4.0] - 2026-02-16
 
 ### Changed
