@@ -6,20 +6,61 @@ This document contains common operational procedures for maintaining the landing
 
 ## Table of Contents
 
-1. [Sync Content from LinkedIn](#sync-content-from-linkedin)
+1. [Sync from Branding Context](#sync-from-branding-context)
 2. [Sync Content from Medium](#sync-content-from-medium)
 3. [Design System Token Updates](#design-system-token-updates)
 4. [Git Submodule Management](#git-submodule-management)
 
 ---
 
-## Sync Content from LinkedIn
+## Sync from Branding Context
 
-> **Moved to `branding-context` repo.** See `branding-context/.context/PROCEDURES.md` for the full LinkedIn sync procedure.
+**Purpose:** Update all landing-page files when canonical data changes in `branding-context/v1/`.
 
-LinkedIn sync feeds all downstream projects (landing-page, business-card), so the procedure now lives in the centralized `branding-context` repository.
+> **LinkedIn sync** has moved to `branding-context/.context/PROCEDURES.md`. After syncing LinkedIn data into branding-context, follow the steps below to propagate changes here.
 
-**After syncing:** Update `content/personal.json` and `lib/data.ts` with canonical values from `branding-context/v1/`.
+### Files to Update
+
+> [!IMPORTANT]
+> Personal data is scattered across multiple file types — not just JSON data files.
+> Always check **all** locations below when syncing.
+
+#### Primary Data Files
+| File | Data | Canonical Source |
+|------|------|-----------------|
+| `content/personal.json` | Name, role, bio, years, URLs | `identity.json` + `contact.json` |
+| `lib/data.ts` | Career timeline, stats, achievements | `experience.json` + `projects.json` |
+
+#### SEO & Metadata
+| File | Data | Watch For |
+|------|------|-----------|
+| `app/layout.tsx` | Page title, meta description, OG tags, Twitter card | Years of experience, role title, keywords |
+
+#### Documentation & Specs
+| File | Data | Watch For |
+|------|------|-----------|
+| `ideas/content-gathering-summary.md` | Stats, section mapping | Metric values, display decisions |
+| `ideas/content-data-source.md` | Data source references | Already references `branding-context/v1/` |
+| `ideas/visual-presentation-plan.md` | Wireframe labels | Role title, company names in ASCII art |
+
+#### Tests
+| File | Data | Watch For |
+|------|------|-----------|
+| `__tests__/components/career-timeline.test.tsx` | Comments referencing company names | Company name changes |
+
+### Verification Step
+
+After updating, **always run this grep** to catch any remaining stale values:
+
+```bash
+grep -rn "SEARCH_TERM" --include="*.ts" --include="*.tsx" --include="*.json" --include="*.md" \
+  --exclude-dir=node_modules --exclude-dir=.next | grep -v CHANGELOG | grep -v ".context/"
+```
+
+Common search terms to check:
+- Old role title (e.g., `"Automation Engineer"`, `"Infrastructure & AI Engineer"`)
+- Old years count (e.g., `"6+ years"`, `"7+ years"`)
+- Old company names (e.g., `"GoTo Group"`)
 
 ---
 
