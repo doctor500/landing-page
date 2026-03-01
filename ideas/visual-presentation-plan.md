@@ -32,7 +32,7 @@
 │                                                 │ 90%+   │ │
 │ DAVID LAYARDI                                   │ Cost   │ │
 │                                                 └────────┘ │
-│ Infrastructure & AI Engineer                    ┌────────┐ │
+│ Infrastructure & Agentic AI Engineer              ┌────────┐ │
 │                                                 │ 99.9%  │ │
 │ Cloud-Native Automation with                    │ Uptime │ │
 │ AI-Powered Operations                           └────────┘ │
@@ -151,7 +151,7 @@
 │  │    Indonesia                                            │
 │  │                                    [View Details ▼]     │
 │  │                                                         │
-│  ●─── GoTo Group | Nov 2021 - Dec 2023                    │
+│  ●─── Gojek - GoTo Financial (GTF) | Nov 2021 - Dec 2023     │
 │  │    DevOps Engineer                                      │
 │  │    Jakarta, Indonesia                                   │
 │  │                                    [View Details ▼]     │

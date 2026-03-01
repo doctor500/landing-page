@@ -9,23 +9,23 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-    title: 'David Layardi | Infrastructure Engineer',
-    description: '6+ years of infrastructure engineering excellence. Specializing in cloud architecture, DevOps automation, and cost optimization. 90%+ cost reduction achieved, 99.9% uptime maintained.',
-    keywords: ['DevOps', 'Infrastructure Engineer', 'Cloud Architecture', 'GCP', 'AWS', 'Kubernetes', 'Terraform', 'CI/CD'],
+    title: 'David Layardi | Infrastructure & Agentic AI Engineer',
+    description: '8+ years of infrastructure engineering excellence. Specializing in cloud architecture, DevOps automation, and Agentic AI for operations. 90%+ cost reduction achieved, 99.9% uptime maintained.',
+    keywords: ['DevOps', 'Infrastructure Engineer', 'Cloud Architecture', 'GCP', 'AWS', 'Kubernetes', 'Terraform', 'CI/CD', 'Agentic AI'],
     authors: [{ name: 'David Layardi' }],
     creator: 'David Layardi',
     openGraph: {
         type: 'website',
         locale: 'en_US',
         url: 'https://doctor500.github.io',
-        title: 'David Layardi | Infrastructure  Engineer',
-        description: 'Infrastructure Engineer specializing in cloud architecture and DevOps automation',
+        title: 'David Layardi | Infrastructure & Agentic AI Engineer',
+        description: 'Infrastructure & Agentic AI Engineer specializing in cloud architecture and DevOps automation',
         siteName: 'David Layardi Portfolio',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'David Layardi | Infrastructure Engineer',
-        description: '6+ years driving infrastructure modernization across E-commerce, GovTech, and Fintech',
+        title: 'David Layardi | Infrastructure & Agentic AI Engineer',
+        description: '8+ years driving infrastructure modernization across E-commerce, GovTech, and Fintech',
     },
     robots: {
         index: true,

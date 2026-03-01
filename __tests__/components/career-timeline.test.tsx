@@ -53,8 +53,8 @@ describe('CareerTimeline Component', () => {
     it('displays achievements when expanded', () => {
         render(<CareerTimeline />)
 
-        // Find a position with achievements (GoTo Group)
-        const gotoButton = screen.getAllByText('View details')[2] // Index 2 is GoTo Group
+        // Find a position with achievements (Gojek - GoTo Financial)
+        const gotoButton = screen.getAllByText('View details')[2] // Index 2 is Gojek - GTF
         fireEvent.click(gotoButton)
 
         // Check if achievement is displayed
