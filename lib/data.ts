@@ -47,7 +47,7 @@ export const careerTimeline: CareerPosition[] = [
         role: 'Software Engineer - CI/CD Platform',
         location: 'Tokyo, Japan',
         period: 'Oct 2025 - Present',
-        duration: '3 months',
+        duration: '5 months',
         description: 'CI/CD platform development and Agentic AI for infrastructure operations',
         achievements: [
             'Claude Code Plugin for compliance docs — 80% time reduction',
@@ -74,7 +74,7 @@ export const careerTimeline: CareerPosition[] = [
         technologies: ['GCP', 'Kubernetes', 'Terraform', 'Cloud Run', 'Pomerium', 'Teleport']
     },
     {
-        company: 'GoTo Group',
+        company: 'Gojek - GoTo Financial (GTF)',
         role: 'DevOps Engineer',
         location: 'Jakarta, Indonesia',
         period: 'Nov 2021 - Dec 2023',
@@ -282,9 +282,9 @@ export const featuredProjects: Project[] = [
         technologies: ['Jenkins', 'Groovy', 'Kubernetes']
     },
     {
-        name: 'Open Source CV Builder',
-        description: 'Markdown-based CV generator with GitHub Pages integration',
-        period: '2023',
+        name: 'Open Source CV with AI Evaluation',
+        description: 'Markdown-based CV generator with AI-powered evaluation workflows — automated scoring across 6 categories and 10 quality standards',
+        period: '2024 - Present',
         impact: [
             '5 Stars on GitHub',
             'Open Source Contribution',

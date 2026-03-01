@@ -70,13 +70,14 @@ Examples:
 > **⚠️ MANDATORY:** Read `.context/GOVERNANCE.md` BEFORE making any changes!
 
 1. **Governance:** Follow `.context/GOVERNANCE.md` — Default is **Approval Mode**
-2. **Context:** Read `.context/PROJECT_CONTEXT.md` for project details
-3. **Procedures:** Read `.context/PROCEDURES.md` for operational workflows
-4. **Security:** Read `.context/SECURITY.md` for data privacy & sanitization rules
-5. **Styling:** Use design system tokens for all styling
-6. **Simplicity:** Keep changes simple (complexity failed before)
-7. **Changelog:** Update `.context/CHANGELOG.md` when completing features
-8. **Documentation Rule:** Do NOT create new markdown files
+2. **Branding Data:** Before updating content, read `branding-context/v1/` for canonical data (role, bio, years, skills)
+3. **Context:** Read `.context/PROJECT_CONTEXT.md` for project details
+4. **Procedures:** Read `.context/PROCEDURES.md` for operational workflows
+5. **Security:** Read `.context/SECURITY.md` for data privacy & sanitization rules
+6. **Styling:** Use design system tokens for all styling
+7. **Simplicity:** Keep changes simple (complexity failed before)
+8. **Changelog:** Update `.context/CHANGELOG.md` when completing features
+9. **Documentation Rule:** Do NOT create new markdown files
    - Update existing `.context/` files instead
    - Keep project clean (no redundant docs)
    - Only add essential information

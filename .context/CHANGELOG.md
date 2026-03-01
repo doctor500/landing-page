@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.4.2] - 2026-03-01
+
+### Changed
+- **Branding Sync** — Aligned all content with `branding-context` canonical data
+  - Role title: "Infrastructure & AI Engineer" → "Infrastructure & Agentic AI Engineer"
+  - Career timeline: Rakuten duration → 5 months, GoTo Group → Gojek - GoTo Financial (GTF)
+  - CV project: Updated name/description to reflect AI evaluation framework
+- **LinkedIn Sync Procedure** — Moved to `branding-context` repo (centralized for all projects)
+
+### Documentation
+- **GOVERNANCE.md** — Added `branding-context/v1/` to mandatory reading list
+- **GEMINI.md** — Added branding data reference for AI agents
+- **PROJECT_CONTEXT.md** — Documented branding-context as external dependency
+- **PROCEDURES.md** — LinkedIn sync replaced with cross-reference to branding-context
+
 ## [1.4.1] - 2026-02-22
 
 ### Documentation

@@ -19,9 +19,10 @@ This document establishes protocols for AI Agent interaction with this repositor
 Before performing ANY work on this repository, AI agents **MUST** read and follow these documents in order:
 
 1. **This file** — `.context/GOVERNANCE.md` (protocols & approval rules)
-2. **Project Context** — `.context/PROJECT_CONTEXT.md` (architecture, structure, guidelines)
-3. **Procedures** — `.context/PROCEDURES.md` (operational workflows)
-4. **Security** — `.context/SECURITY.md` (data privacy & sanitization rules)
+2. **Branding Context** — `branding-context/v1/` repo (canonical personal/professional data)
+3. **Project Context** — `.context/PROJECT_CONTEXT.md` (architecture, structure, guidelines)
+4. **Procedures** — `.context/PROCEDURES.md` (operational workflows)
+5. **Security** — `.context/SECURITY.md` (data privacy & sanitization rules)
 
 > [!CAUTION]
 > Skipping any of these documents is a governance violation.

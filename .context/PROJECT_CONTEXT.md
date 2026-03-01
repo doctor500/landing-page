@@ -163,6 +163,15 @@ To extract latest information from LinkedIn or Medium, see `.context/PROCEDURES.
 
 ---
 
+## External Dependencies
+
+### Branding Context (`doctor500/branding-context`)
+- **Purpose:** Canonical source for all personal/professional data (role, bio, years, skills, experience)
+- **Usage:** AI agents must read `branding-context/v1/*.json` before updating content in this project
+- **Sync:** When branding-context data changes, update `content/personal.json` and `lib/data.ts` accordingly
+
+---
+
 ## Related Documentation
 
 - **[GOVERNANCE.md](.context/GOVERNANCE.md)** - AI agent protocols and approval workflows
