@@ -48,27 +48,17 @@ export default function Home() {
             {/* Footer */}
             <footer className="py-12 px-4 border-t border-border-muted">
                 <div className="max-w-4xl mx-auto text-center">
-                    <p className="text-foreground-muted mb-4">
-                        &copy; {new Date().getFullYear()} David Layardi. All rights reserved.
+                    <p className="text-foreground-muted">
+                        Made with ❤️ using{' '}
+                        <a
+                            href="https://github.com/doctor500/landing-page"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent-cyan hover:text-accent-purple transition-colors underline underline-offset-4"
+                        >
+                            GitHub Pages
+                        </a>
                     </p>
-                    <div className="flex justify-center gap-6">
-                        <a
-                            href="https://www.linkedin.com/in/davidlayardi"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent-cyan hover:text-accent-purple transition-colors"
-                        >
-                            LinkedIn
-                        </a>
-                        <a
-                            href="https://github.com/doctor500"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent-cyan hover:text-accent-purple transition-colors"
-                        >
-                            GitHub
-                        </a>
-                    </div>
                 </div>
             </footer>
         </main>

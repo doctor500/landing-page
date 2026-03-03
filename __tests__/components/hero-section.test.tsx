@@ -8,6 +8,14 @@ jest.mock('framer-motion', () => ({
     },
 }))
 
+// Mock modal components
+jest.mock('@/components/modals/PortfolioModal', () => ({
+    PortfolioModal: () => null,
+}))
+jest.mock('@/components/modals/ContactModal', () => ({
+    ContactModal: () => null,
+}))
+
 describe('HeroSection Component', () => {
     it('renders hero heading with name', () => {
         render(<HeroSection />)
@@ -16,17 +24,17 @@ describe('HeroSection Component', () => {
 
     it('renders role title', () => {
         render(<HeroSection />)
-        expect(screen.getByText('Infrastructure Engineer')).toBeInTheDocument()
+        expect(screen.getByText('Infrastructure & Agentic AI Engineer')).toBeInTheDocument()
     })
 
     it('renders tagline', () => {
         render(<HeroSection />)
-        expect(screen.getByText('Building Scalable Cloud Systems')).toBeInTheDocument()
+        expect(screen.getByText('Cloud-Native Automation with AI-Powered Operations')).toBeInTheDocument()
     })
 
     it('renders experience description', () => {
         render(<HeroSection />)
-        expect(screen.getByText(/6\+ years driving infrastructure modernization/)).toBeInTheDocument()
+        expect(screen.getByText(/~8 years driving infrastructure modernization/)).toBeInTheDocument()
     })
 
     it('renders CTA buttons', () => {
@@ -38,10 +46,10 @@ describe('HeroSection Component', () => {
     it('renders all stat cards', () => {
         render(<HeroSection />)
         // First 4 stats are displayed in hero
-        expect(screen.getByText('Cost Reduction')).toBeInTheDocument()
-        expect(screen.getByText('Uptime')).toBeInTheDocument()
-        expect(screen.getByText('Services')).toBeInTheDocument()
-        expect(screen.getByText('Years')).toBeInTheDocument()
+        expect(screen.getByText('Cost Savings')).toBeInTheDocument()
+        expect(screen.getByText('Availability')).toBeInTheDocument()
+        expect(screen.getByText('Doc Automation')).toBeInTheDocument()
+        expect(screen.getByText('Faster Response')).toBeInTheDocument()
     })
 
     it('has correct structure with responsive classes', () => {
@@ -50,12 +58,13 @@ describe('HeroSection Component', () => {
         expect(section).toHaveClass('min-h-screen')
     })
 
-    it('CTA buttons have correct links', () => {
+    it('CTA buttons are interactive', () => {
         render(<HeroSection />)
         const viewWorkButton = screen.getByText('View My Work')
         const connectButton = screen.getByText("Let's Connect")
 
-        expect(viewWorkButton.closest('a')).toHaveAttribute('href', '#projects')
-        expect(connectButton.closest('a')).toHaveAttribute('href', '#contact')
+        // Buttons should be <button> elements (not <a> tags)
+        expect(viewWorkButton.closest('button')).toBeInTheDocument()
+        expect(connectButton.closest('button')).toBeInTheDocument()
     })
 })

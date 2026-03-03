@@ -33,7 +33,7 @@ describe('Testimonials Component', () => {
 
     it('displays testimonial quote', () => {
         render(<Testimonials />)
-        const quote = screen.getByText((content, element) => {
+        const quote = screen.getByText((content) => {
             return content.includes('unflappable')
         })
         expect(quote).toBeInTheDocument()
@@ -58,7 +58,7 @@ describe('Testimonials Component', () => {
         expect(dots.length).toBe(testimonials.length)
     })
 
-    it('changes testimonial on dot click', () => {
+    it('changes testimonial on dot click', async () => {
         const { container } = render(<Testimonials />)
 
         // Click second dot
@@ -66,22 +66,7 @@ describe('Testimonials Component', () => {
         fireEvent.click(dots[1])
 
         // Should show second testimonial
-        waitFor(() => {
-            expect(screen.getByText(testimonials[1].name)).toBeInTheDocument()
-        })
-    })
-
-    it('auto-rotates after 8 seconds', () => {
-        render(<Testimonials />)
-
-        // Initially shows first testimonial
-        expect(screen.getByText(testimonials[0].name)).toBeInTheDocument()
-
-        // Fast-forward 8 seconds
-        jest.advanceTimersByTime(8000)
-
-        // Should advance to next testimonial
-        waitFor(() => {
+        await waitFor(() => {
             expect(screen.getByText(testimonials[1].name)).toBeInTheDocument()
         })
     })

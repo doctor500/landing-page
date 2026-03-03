@@ -36,9 +36,9 @@ describe('StatsDashboard Component', () => {
         expect(grid).toHaveClass('lg:grid-cols-3')
     })
 
-    it('applies stat-card styling to each card', () => {
+    it('applies monitoring-card styling to each card', () => {
         const { container } = render(<StatsDashboard />)
-        const cards = container.querySelectorAll('.stat-card')
+        const cards = container.querySelectorAll('.monitoring-card')
         expect(cards.length).toBe(stats.length)
     })
 

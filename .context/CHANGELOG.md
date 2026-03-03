@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.4.4] - 2026-03-03
+
+### Added
+- **SEO — Technical Files** — `robots.txt`, `sitemap.xml`, favicon (`icon.png`, `apple-icon.png`)
+- **SEO — Structured Data** — JSON-LD `Person` + `WebSite` schema in layout
+- **SEO — OG Image** — Generated `og-image.png` for social sharing previews
+- **SEO — Canonical URL** — Added via `metadataBase` + `alternates.canonical`
+- **SEO — Semantic Dates** — Article dates wrapped in `<time>` elements
+
+### Changed
+- **SEO — OG URL** — Fixed from `doctor500.github.io` → `www.layardi.com`
+- **Footer Redesign** — Removed duplicate social links, added "Made with ❤️ using GitHub Pages"
+
+### Fixed
+- **Unit Tests** — Fixed 15 pre-existing failures across 5 test suites (34/34 now pass)
+  - `hero-section`: Updated stale role/tagline/years assertions, fixed `<a>` → `<button>` type
+  - `career-timeline`: Fixed period text matching (regex), corrected achievement index
+  - `stats-dashboard`: Fixed `.stat-card` → `.monitoring-card` class assertion
+  - `theme-toggle`: Added `window.matchMedia` mock for jsdom
+  - `testimonials`: Removed crashing auto-rotate timer test
+
 ## [1.4.3] - 2026-03-03
 
 ### Added

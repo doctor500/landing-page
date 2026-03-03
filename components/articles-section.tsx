@@ -55,7 +55,7 @@ function ArticleCard({ article, index }: ArticleCardProps) {
 
                     {/* Meta */}
                     <div className="flex items-center gap-3 text-sm text-foreground-muted mb-3">
-                        <span>{article.publishedDate}</span>
+                        <time dateTime={article.publishedDate}>{article.publishedDate}</time>
                         <span>•</span>
                         <span>{article.readingTime}</span>
                         {article.claps > 10 && (

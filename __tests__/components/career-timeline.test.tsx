@@ -24,10 +24,11 @@ describe('CareerTimeline Component', () => {
         })
     })
 
-    it('displays duration for each position', () => {
+    it('displays period for each position', () => {
         render(<CareerTimeline />)
         careerTimeline.forEach((position) => {
-            expect(screen.getByText(position.duration)).toBeInTheDocument()
+            // Period is rendered as "{location} • {period}" in same text node
+            expect(screen.getByText(new RegExp(position.period.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')))).toBeInTheDocument()
         })
     })
 
@@ -53,12 +54,12 @@ describe('CareerTimeline Component', () => {
     it('displays achievements when expanded', () => {
         render(<CareerTimeline />)
 
-        // Find a position with achievements (Gojek - GoTo Financial)
-        const gotoButton = screen.getAllByText('View details')[2] // Index 2 is Gojek - GTF
-        fireEvent.click(gotoButton)
+        // Expand GovTech Procurement (index 1) which has the 90%+ cost reduction achievement
+        const govtechButton = screen.getAllByText('View details')[1]
+        fireEvent.click(govtechButton)
 
         // Check if achievement is displayed
-        expect(screen.getByText(/90%\+ infrastructure cost reduction/)).toBeInTheDocument()
+        expect(screen.getByText(/90%\+ daily cost reduction/)).toBeInTheDocument()
     })
 
     it('displays technologies when expanded', () => {
