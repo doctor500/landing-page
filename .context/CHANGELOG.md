@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.3] - 2026-03-03
+
+### Added
+- **Testimonials** — Added 2 new LinkedIn testimonials to carousel
+  - Qassandra Chaidir (Tech Architecture Specialist, Accenture)
+  - Evan Emelga (Engineering Manager, GoTo Financial)
+- **Testimonials CTA** — "View All on LinkedIn" button linking to recommendations page
+
 ## [1.4.2] - 2026-03-01
 
 ### Changed

@@ -185,6 +185,24 @@ He is a true A-player, a dedicated professional, and a genuine pleasure to work 
 David didn't just stop there; he proactively optimized our costs by implementing GKE on Spot Instances, skillfully architecting a high-availability setup across multiple zones to ensure robust performance.
 
 Beyond his strong technical skills, David is a disciplined and responsible team member. He communicates clearly, collaborates effectively, and is always willing to learn. He would be a valuable addition to any team.`
+    },
+    {
+        name: 'Qassandra Chaidir',
+        title: 'Tech Architecture Specialist',
+        company: 'Accenture',
+        linkedIn: 'https://www.linkedin.com/in/qassandrach/',
+        quote: `I had the chance to work with David on the same team, and from day one, he stood out with his proactive attitude. He's the kind of teammate who always takes initiative, which made working with him so easy and enjoyable. On top of that, his solid technical skills really complement his proactive nature, making him an all-around great engineer to have on the team. I would love to crossed paths again with him in the future!`
+    },
+    {
+        name: 'Evan Emelga',
+        title: 'Engineering Manager',
+        company: 'GoTo Financial',
+        linkedIn: 'https://www.linkedin.com/in/evan-emelga/',
+        quote: `David has a wealth of knowledge and skills in Infrastructure, DevOps, and Cloud domains. He is always eager to learn new things and share his insights with others. He is a humble and helpful team player who can be relied on in any situation.
+
+He is always ready to respond to any incident, even in the middle of the night. He is dependable and professional in his work. He is also a great mentor and communicator who can explain complex concepts in a simple way. He does not judge or belittle anyone who asks for his help.
+
+All in all, David is a valuable asset to the team, and I wish him all the best in his career advancement.`
     }
 ]
 
