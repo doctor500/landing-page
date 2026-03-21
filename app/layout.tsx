@@ -90,6 +90,9 @@ export default function RootLayout({
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
+                {process.env.NODE_ENV === 'production' && (
+                    <script defer src="https://analytics.kopidalar.id/script.js" data-website-id="71547e82-2fb3-4a11-933e-325840c53000"></script>
+                )}
             </head>
             <body className={`${inter.variable} font-sans`}>
                 <ThemeProvider

@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.4.5] - 2026-03-22
+
+### Added
+- **Analytics** — Integrated Umami tracking script for self-hosted analytics (`analytics.kopidalar.id`), enabled only in production builds.
+
 ## [1.4.4] - 2026-03-03
 
 ### Added
