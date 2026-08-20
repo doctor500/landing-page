@@ -55,7 +55,7 @@ npm run build    # Production build
 ## 📏 Development Guidelines
 
 > [!IMPORTANT]
-> **AI Agent Governance:** All AI agents MUST read `.context/GOVERNANCE.md` before making any changes. Default mode is **Approval Mode** — always ask before executing.
+> **AI Agent Governance:** All AI agents MUST read `.agents/GOVERNANCE.md` before making any changes. Default mode is **Approval Mode** — always ask before executing.
 
 1. **Content System:** 
    - **Text Content:** JSON files in `content/` directory
@@ -81,8 +81,8 @@ npm run build    # Production build
 
 ```
 landing-page/
-├── .context/              # Documentation (source of truth)
-├── .agent/workflows/      # AI agent workflow templates
+├── .agents/              # Documentation (source of truth)
+├── .agents/workflows/      # AI agent workflow templates
 ├── .github/workflows/     # CI/CD
 ├── content/               # JSON Content Files
 │   ├── personal.json     # Personal info, bio, URLs
@@ -141,7 +141,7 @@ landing-page/
 | `personal.json` | Name, role, tagline, bio, email, social URLs |
 | `sections.json` | Section titles and subtitles |
 | `links.json` | Portfolio & contact link metadata |
-| `*-sync.json` | **Temporary sync files** (gitignored) - See `.context/PROCEDURES.md` |
+| `*-sync.json` | **Temporary sync files** (gitignored) - See `.agents/PROCEDURES.md` |
 
 ### To Update Content:
 ```bash
@@ -150,11 +150,11 @@ vim content/personal.json
 ```
 
 ### Content Sync Procedures
-To extract latest information from LinkedIn or Medium, see `.context/PROCEDURES.md`:
+To extract latest information from LinkedIn or Medium, see `.agents/PROCEDURES.md`:
 - **LinkedIn Sync:** Extract current position, headline, about section
 - **Medium Sync:** Extract latest articles and author bio
 - **Output:** Temporary `*-sync.json` files for review before integration
-- **Security:** See `.context/SECURITY.md` for data privacy guidelines
+- **Security:** See `.agents/SECURITY.md` for data privacy guidelines
 
 ### Content Loader (`lib/content.ts`)
 - Imports JSON files with TypeScript types
@@ -174,8 +174,8 @@ To extract latest information from LinkedIn or Medium, see `.context/PROCEDURES.
 
 ## Related Documentation
 
-- **[GOVERNANCE.md](.context/GOVERNANCE.md)** - AI agent protocols and approval workflows
-- **[PROCEDURES.md](.context/PROCEDURES.md)** - Operational procedures (content sync, design system updates, git submodules)
-- **[SECURITY.md](.context/SECURITY.md)** - Security guidelines for data privacy and sync file management
-- **[CHANGELOG.md](.context/CHANGELOG.md)** - Project version history
+- **[GOVERNANCE.md](.agents/GOVERNANCE.md)** - AI agent protocols and approval workflows
+- **[PROCEDURES.md](.agents/PROCEDURES.md)** - Operational procedures (content sync, design system updates, git submodules)
+- **[SECURITY.md](.agents/SECURITY.md)** - Security guidelines for data privacy and sync file management
+- **[CHANGELOG.md](.agents/CHANGELOG.md)** - Project version history
 - **[Design System Documentation](design-system/README.md)** - Design tokens and guidelines

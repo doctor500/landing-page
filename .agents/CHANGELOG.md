@@ -53,12 +53,12 @@
 
 ### Documentation
 - **Governance Update** — Enhanced AI agent governance with new enforcement sections
-  - Added Mandatory Reading section (all 4 `.context/` docs required)
+  - Added Mandatory Reading section (all 4 `.agents/` docs required)
   - Added Content Sync Workflow governance rules (approval requirements, mandatory steps)
   - Added Security & Data Privacy enforcement (commit verification, stop-on-leak protocol)
   - Added Changelog Update enforcement (what requires/doesn't require entries)
   - Expanded Pre-Flight Checks (10 items, up from 5)
-  - Updated Related Documentation with full `.context/` references
+  - Updated Related Documentation with full `.agents/` references
 - **GEMINI.md** — Added `PROCEDURES.md` and `SECURITY.md` to mandatory reading list
 
 ## [1.4.0] - 2026-02-16
@@ -120,7 +120,7 @@
 ## [1.2.1] - 2026-02-02
 
 ### Added
-- **Security Documentation** - Created `.context/SECURITY.md` with comprehensive data privacy guidelines
+- **Security Documentation** - Created `.agents/SECURITY.md` with comprehensive data privacy guidelines
   - Sync file security best practices
   - Data sanitization checklists for LinkedIn and Medium sync
   - Pre-commit verification steps
@@ -138,7 +138,7 @@
 ## [1.2.0] - 2026-02-02
 
 ### Added
-- **AI Agent Governance Framework:** Created `.context/GOVERNANCE.md` to establish formal protocols for AI agent interaction
+- **AI Agent Governance Framework:** Created `.agents/GOVERNANCE.md` to establish formal protocols for AI agent interaction
   - Approval Mode (Default): Requires explicit user approval before executing changes
   - Auto Pilot Mode (Opt-in): Fast mode for experienced users
   - Project-specific rules for web app development, design system, Git submodules
@@ -213,7 +213,7 @@
 
 ### Changed
 - Theme toggle moved into floating nav (no more overlap)
-- Documentation consolidated to `.context/` folder
+- Documentation consolidated to `.agents/` folder
 - Design system: git submodule → Netlify CDN (removes build auth requirements)
 
 ---

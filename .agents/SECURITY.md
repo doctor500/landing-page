@@ -205,9 +205,9 @@ Use this checklist before integrating sync data into active content files:
 
 ## 📚 Related Documentation
 
-- [PROCEDURES.md](.context/PROCEDURES.md) - Operational procedures
-- [GOVERNANCE.md](.context/GOVERNANCE.md) - AI agent protocols
-- [PROJECT_CONTEXT.md](.context/PROJECT_CONTEXT.md) - Project overview
+- [PROCEDURES.md](.agents/PROCEDURES.md) - Operational procedures
+- [GOVERNANCE.md](.agents/GOVERNANCE.md) - AI agent protocols
+- [PROJECT_CONTEXT.md](.agents/PROJECT_CONTEXT.md) - Project overview
 
 ---
 

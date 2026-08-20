@@ -18,11 +18,11 @@ This document establishes protocols for AI Agent interaction with this repositor
 
 Before performing ANY work on this repository, AI agents **MUST** read and follow these documents in order:
 
-1. **This file** — `.context/GOVERNANCE.md` (protocols & approval rules)
+1. **This file** — `.agents/GOVERNANCE.md` (protocols & approval rules)
 2. **Branding Context** — `branding-context/v1/` repo (canonical personal/professional data)
-3. **Project Context** — `.context/PROJECT_CONTEXT.md` (architecture, structure, guidelines)
-4. **Procedures** — `.context/PROCEDURES.md` (operational workflows)
-5. **Security** — `.context/SECURITY.md` (data privacy & sanitization rules)
+3. **Project Context** — `.agents/PROJECT_CONTEXT.md` (architecture, structure, guidelines)
+4. **Procedures** — `.agents/PROCEDURES.md` (operational workflows)
+5. **Security** — `.agents/SECURITY.md` (data privacy & sanitization rules)
 
 > [!CAUTION]
 > Skipping any of these documents is a governance violation.
@@ -154,12 +154,12 @@ By operating on this repository, you acknowledge:
    - NEVER hardcode colors or spacing values
    - Always use design system tokens from CDN (`--accent-cyan`, `--space-20`, etc.)
    - Verify token compatibility before using new tokens
-   - See `.context/PROJECT_CONTEXT.md` for design system guidelines
+   - See `.agents/PROJECT_CONTEXT.md` for design system guidelines
 
 3. **Git Submodule Safety**
    - DO NOT commit file changes inside `design-system/` directly to this repo
    - Follow proper submodule workflow (commit to submodule repo first)
-   - See `.context/PROJECT_CONTEXT.md` for detailed submodule procedures
+   - See `.agents/PROJECT_CONTEXT.md` for detailed submodule procedures
 
 4. **Content Management**
    - Content changes should update JSON files in `content/` directory
@@ -168,7 +168,7 @@ By operating on this repository, you acknowledge:
 
 ### Security & Data Privacy
 
-**Mandatory:** All agents MUST read `.context/SECURITY.md` before any of the following activities:
+**Mandatory:** All agents MUST read `.agents/SECURITY.md` before any of the following activities:
 - Content sync procedures (LinkedIn, Medium, or any external source)
 - Modifying files in `content/` directory
 - Handling any personally identifiable information (PII)
@@ -196,7 +196,7 @@ By operating on this repository, you acknowledge:
 
 After completing any feature, fix, or significant change:
 
-1. **Update `.context/CHANGELOG.md`** with the change under the appropriate version
+1. **Update `.agents/CHANGELOG.md`** with the change under the appropriate version
 2. Use the existing format: `## [version] - date` with categorized subsections (`Added`, `Changed`, `Fixed`, `Documentation`)
 3. If no version bump is warranted, add under the current version heading
 
@@ -218,15 +218,15 @@ After completing any feature, fix, or significant change:
 
 Before making ANY changes, AI agents MUST verify:
 
-- [ ] I have read `.context/GOVERNANCE.md`
-- [ ] I have read `.context/PROJECT_CONTEXT.md`
-- [ ] I have read `.context/PROCEDURES.md`
-- [ ] I have read `.context/SECURITY.md`
+- [ ] I have read `.agents/GOVERNANCE.md`
+- [ ] I have read `.agents/PROJECT_CONTEXT.md`
+- [ ] I have read `.agents/PROCEDURES.md`
+- [ ] I have read `.agents/SECURITY.md`
 - [ ] I understand the current project state
 - [ ] I know which mode I'm operating in (Approval or Auto Pilot)
 - [ ] I have a clear plan for the requested changes
 - [ ] I know how to verify my changes
-- [ ] I will update `.context/CHANGELOG.md` after completing changes
+- [ ] I will update `.agents/CHANGELOG.md` after completing changes
 - [ ] I will run `git status` before committing to check for data leaks
 
 ---
@@ -283,10 +283,10 @@ If you believe these rules are preventing a reasonable action, you may:
 
 ## Related Documentation
 
-- **Project Overview:** `.context/PROJECT_CONTEXT.md`
-- **Procedures:** `.context/PROCEDURES.md`
-- **Security:** `.context/SECURITY.md`
-- **Version History:** `.context/CHANGELOG.md`
+- **Project Overview:** `.agents/PROJECT_CONTEXT.md`
+- **Procedures:** `.agents/PROCEDURES.md`
+- **Security:** `.agents/SECURITY.md`
+- **Version History:** `.agents/CHANGELOG.md`
 - **Quick Reference:** `GEMINI.md` (root level)
 
 ---

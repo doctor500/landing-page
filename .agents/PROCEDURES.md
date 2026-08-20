@@ -17,7 +17,7 @@ This document contains common operational procedures for maintaining the landing
 
 **Purpose:** Update all landing-page files when canonical data changes in `branding-context/v1/`.
 
-> **LinkedIn sync** has moved to `branding-context/.context/PROCEDURES.md`. After syncing LinkedIn data into branding-context, follow the steps below to propagate changes here.
+> **LinkedIn sync** has moved to `branding-context/.agents/PROCEDURES.md`. After syncing LinkedIn data into branding-context, follow the steps below to propagate changes here.
 
 ### Files to Update
 
@@ -54,7 +54,7 @@ After updating, **always run this grep** to catch any remaining stale values:
 
 ```bash
 grep -rn "SEARCH_TERM" --include="*.ts" --include="*.tsx" --include="*.json" --include="*.md" \
-  --exclude-dir=node_modules --exclude-dir=.next | grep -v CHANGELOG | grep -v ".context/"
+  --exclude-dir=node_modules --exclude-dir=.next | grep -v CHANGELOG | grep -v ".agents/"
 ```
 
 Common search terms to check:
@@ -68,7 +68,7 @@ Common search terms to check:
 
 **Purpose:** Extract latest published articles from Medium profile.
 
-**Security:** See [SECURITY.md](.context/SECURITY.md) for data privacy guidelines.
+**Security:** See [SECURITY.md](.agents/SECURITY.md) for data privacy guidelines.
 
 **Frequency:** On-demand (run after publishing new articles or updating bio)
 
@@ -260,7 +260,7 @@ If you see "embedded git repository" warnings:
 
 ### Before Running Procedures
 
-1. **Read the governance:** Follow `.context/GOVERNANCE.md` protocols
+1. **Read the governance:** Follow `.agents/GOVERNANCE.md` protocols
 2. **Check prerequisites:** Ensure all tools and access are available
 3. **Backup important data:** Before making changes to active content files
 
@@ -268,7 +268,7 @@ If you see "embedded git repository" warnings:
 
 1. **Review output:** Always verify extracted/generated data
 2. **Test locally:** Run `npm run dev` before committing changes
-3. **Update changelog:** Document significant changes in `.context/CHANGELOG.md`
+3. **Update changelog:** Document significant changes in `.agents/CHANGELOG.md`
 4. **Commit changes:** Use conventional commit messages
 
 ### When Something Goes Wrong

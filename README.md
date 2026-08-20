@@ -49,7 +49,7 @@ A modern, high-performance portfolio landing page built to showcase professional
 
 ```
 landing-page/
-├── .context/           # Project documentation
+├── .agents/           # Project documentation
 ├── app/                # Next.js App Router
 ├── components/         # UI Components (Hero, Stats, Timeline)
 ├── lib/
