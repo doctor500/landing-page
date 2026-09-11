@@ -56,7 +56,7 @@ const jsonLd = [
         jobTitle: 'Infrastructure & Agentic AI Engineer',
         worksFor: {
             '@type': 'Organization',
-            name: 'Rakuten',
+            name: 'Woven by Toyota',
         },
         sameAs: [
             'https://www.linkedin.com/in/david-lay/',
