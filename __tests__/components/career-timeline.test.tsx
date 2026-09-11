@@ -54,8 +54,8 @@ describe('CareerTimeline Component', () => {
     it('displays achievements when expanded', () => {
         render(<CareerTimeline />)
 
-        // Expand GovTech Procurement (index 1) which has the 90%+ cost reduction achievement
-        const govtechButton = screen.getAllByText('View details')[1]
+        // Expand GovTech Procurement (index 2) which has the 90%+ cost reduction achievement
+        const govtechButton = screen.getAllByText('View details')[2]
         fireEvent.click(govtechButton)
 
         // Check if achievement is displayed
@@ -65,8 +65,8 @@ describe('CareerTimeline Component', () => {
     it('displays technologies when expanded', () => {
         render(<CareerTimeline />)
 
-        // Expand first position (Rakuten)
-        const firstButton = screen.getAllByText('View details')[0]
+        // Expand Rakuten (index 1), which has technologies
+        const firstButton = screen.getAllByText('View details')[1]
         fireEvent.click(firstButton)
 
         // Check for technologies section

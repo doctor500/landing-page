@@ -43,11 +43,21 @@ export interface Stat {
 // Career Timeline Data
 export const careerTimeline: CareerPosition[] = [
     {
+        company: 'Woven by Toyota',
+        role: 'Site Reliability Engineer',
+        location: 'Tokyo, Japan',
+        period: 'Sep 2026 - Present',
+        duration: '1 month',
+        description: '',
+        achievements: [],
+        technologies: []
+    },
+    {
         company: 'Rakuten',
         role: 'Software Engineer - CI/CD Platform',
         location: 'Tokyo, Japan',
-        period: 'Oct 2025 - Present',
-        duration: '5 months',
+        period: 'Oct 2025 - Aug 2026',
+        duration: '11 months',
         description: 'CI/CD platform development and Agentic AI for infrastructure operations',
         achievements: [
             'Claude Code Plugin for compliance docs — 80% time reduction',
